@@ -1,2 +1,50 @@
 :root {
+  /* setting color scheme for site */
+  --dark: #222831;
+  --gray: #393e46;
+  --contrast: #00adb5;
+  --light: #eeeeee;
+
+  /* general color of items */
+  background: var(--dark);
+  color: var(--contrast);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--light);
+  margin: 5px;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* header styling */
+header {
+  background: var(--contrast);
+}
+
+header a {
+  color: var(--light);
+}
+
+header a:hover {
+  color: var(--dark);
+}
+
+header li .active {
+  color: var(--dark);
 }
