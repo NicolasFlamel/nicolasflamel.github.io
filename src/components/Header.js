@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Header({ currentPage, setCurrentPage }) {
   const pages = ['aboutMe', 'portfolio', 'contact', 'resume'];
 
