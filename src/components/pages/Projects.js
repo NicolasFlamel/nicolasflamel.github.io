@@ -1,24 +1,15 @@
 import cinephiliacPreview from '../../assets/images/cinephiliac-preview.jpg';
 import studdyBuddyPreview from '../../assets/images/studdy-buddy-preview.jpg';
 
-class ImgDim {
-  constructor(width, ratio) {
-    this.width = width;
-    this.ratio = ratio;
-    this.height = width / ratio;
-  }
-
-  getDimensions() {
-    const dimensions = { width: `${this.width}px`, height: `${this.height}px` };
-    return dimensions;
-  }
-}
+const imgDim = (width, [ratioW, ratioH]) => {
+  const height = (width / ratioW) * ratioH;
+  return { width: `${width}px`, height: `${height}px` };
+};
 
 function Projects() {
-  const img = new ImgDim(550, 16 / 9);
   const styles = {
     projectImg: {
-      ...img.getDimensions(),
+      ...imgDim(550, [16, 9]),
     },
   };
 
