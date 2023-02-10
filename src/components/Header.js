@@ -1,5 +1,5 @@
 function Header({ currentPage, setCurrentPage }) {
-  const pages = ['aboutMe', 'portfolio', 'contact', 'resume'];
+  const pages = ['about', 'portfolio', 'contact', 'resume'];
 
   return (
     <header className="text-center">
@@ -9,8 +9,8 @@ function Header({ currentPage, setCurrentPage }) {
           <li className="btn" onClick={() => setCurrentPage(pages[0])}>
             <h2>
               <a
-                className={currentPage === 'aboutMe' ? 'active' : ''}
-                href="#aboutMe"
+                className={currentPage === 'about' ? 'active' : ''}
+                href="#about"
               >
                 About Me
               </a>

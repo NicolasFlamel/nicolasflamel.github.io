@@ -6,11 +6,11 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 function Portfolio() {
-  const [currentPage, setCurrentPage] = useState('aboutMe');
+  const [currentPage, setCurrentPage] = useState('about');
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'aboutMe':
+      case 'about':
         return <About />;
       case 'portfolio':
         return <Projects />;
