@@ -25,7 +25,7 @@ function Projects() {
   return (
     <section className="bg-gray p-5" id="portfolio">
       <h1>My Projects</h1>
-      <ol className="d-flex flex-wrap">
+      <ol className="d-flex flex-wrap justify-content-around">
         <li className="application">
           <a href="https://nicolasflamel.github.io/Cinephiliac/">
             <h2>Cinephiliac</h2>
