@@ -26,6 +26,7 @@ function About() {
         <a
           href="https://github.com/NicolasFlamel/"
           target="_blank"
+          rel="noreferrer"
           onMouseEnter={handleEvent}
           onMouseLeave={handleEvent}
         >
@@ -36,7 +37,11 @@ function About() {
           />
         </a>
       </article>
-      <img src={portrait} style={{ float: 'left', marginRight: '10px' }} />
+      <img
+        src={portrait}
+        alt="self portrait"
+        style={{ float: 'left', marginRight: '10px' }}
+      />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo
         delectus quia perferendis inventore, illum optio perspiciatis. Esse

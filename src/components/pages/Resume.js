@@ -1,5 +1,5 @@
 function Resume() {
-  return <div></div>;
+  return <section id="resume"></section>;
 }
 
 export default Resume;

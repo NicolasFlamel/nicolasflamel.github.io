@@ -6,7 +6,8 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 function Portfolio() {
-  const [currentPage, setCurrentPage] = useState('about');
+  const hash = window.location.hash.slice(1) || 'about';
+  const [currentPage, setCurrentPage] = useState(hash);
 
   const renderPage = () => {
     switch (currentPage) {
