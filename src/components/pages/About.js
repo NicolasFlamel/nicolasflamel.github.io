@@ -1,10 +1,45 @@
+import { useState } from 'react';
+import github from '../../assets/images/github.svg';
+import portrait from '../../assets/images/portrait-150-200.jpg';
+
 function About() {
+  const [isHover, setIsHover] = useState(false);
+  const styles = {
+    githubImage: {
+      width: '60px',
+      height: '70px',
+      opacity: isHover ? 1 : 0.5,
+    },
+    title: {
+      display: 'flex',
+      justifyContent: 'space-between',
+    },
+  };
+
+  const handleEvent = ({ type }) =>
+    type === 'mouseenter' ? setIsHover(true) : setIsHover(false);
+
   return (
-    <section id="about">
-      <h1>About me</h1>
+    <section className="bg-gray p-5" id="about">
+      <article style={styles.title}>
+        <h1>About me</h1>
+        <a
+          href="https://github.com/NicolasFlamel/"
+          target="_blank"
+          onMouseEnter={handleEvent}
+          onMouseLeave={handleEvent}
+        >
+          <img
+            src={github}
+            alt="github profile link"
+            style={styles.githubImage}
+          />
+        </a>
+      </article>
+      <img src={portrait} style={{ float: 'left', marginRight: '10px' }} />
       <p>
-        &emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-        quo delectus quia perferendis inventore, illum optio perspiciatis. Esse
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo
+        delectus quia perferendis inventore, illum optio perspiciatis. Esse
         deleniti ducimus, corrupti minima similique dolor illo deserunt
         consequatur sit placeat itaque reiciendis error, unde id quisquam,
         impedit saepe? Fuga deleniti, at facilis nihil porro expedita incidunt

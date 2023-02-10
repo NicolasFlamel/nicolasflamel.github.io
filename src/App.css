@@ -5,6 +5,9 @@
   --contrast: #00adb5;
   --light: #eeeeee;
 
+  /* border settings */
+  --radius: 10px;
+
   /* general color of items */
   background: var(--dark);
   color: var(--contrast);
@@ -17,7 +20,6 @@ h4,
 h5 {
   color: var(--light);
   margin: 5px;
-  text-align: center;
 }
 
 h1 {
@@ -35,6 +37,7 @@ li {
 /* header styling */
 header {
   background: var(--contrast);
+  border-radius: var(--radius);
 }
 
 header a {
@@ -46,5 +49,10 @@ header a:hover {
 }
 
 header li .active {
-  color: var(--dark);
+  color: var(--gray);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+  border-radius: var(--radius);
 }
