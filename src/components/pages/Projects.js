@@ -1,7 +1,7 @@
 import cinephiliacPreview from '../../assets/images/cinephiliac-preview.jpg';
 import studdyBuddyPreview from '../../assets/images/studdy-buddy-preview.jpg';
 import techiesBlogPreview from '../../assets/images/techies-blog-preview.jpg';
-import textEditorPWA from '../../assets/images/text-editor-pwa.jpg'
+import textEditorPWA from '../../assets/images/text-editor-pwa.jpg';
 
 const imgDim = (width, [ratioW, ratioH]) => {
   const height = (width / ratioW) * ratioH;
@@ -20,7 +20,7 @@ function Projects() {
       <h1>My Projects</h1>
       <ol className="d-flex flex-wrap justify-content-around">
         {/* TODO: add github links */}
-        
+
         <li className="application">
           <a href="https://nicolasflamel.github.io/Cinephiliac/">
             <h2>Cinephiliac</h2>

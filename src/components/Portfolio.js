@@ -19,6 +19,8 @@ function Portfolio() {
         return <Contact />;
       case 'resume':
         return <Resume />;
+      default:
+        return <About />;
     }
   };
 
