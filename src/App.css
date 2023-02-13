@@ -30,7 +30,7 @@ h2 {
   font-size: x-large;
 }
 
-li {
+.listStyleNone {
   list-style-type: none;
 }
 
