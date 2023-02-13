@@ -15,13 +15,15 @@ function Projects() {
     },
   };
 
+  const listClasses = 'application listStyleNone';
+
   return (
     <section className="bg-gray p-5" id="portfolio">
       <h1>My Projects</h1>
       <ol className="d-flex flex-wrap justify-content-around">
         {/* TODO: add github links */}
 
-        <li className="application">
+        <li className={listClasses}>
           <a href="https://nicolasflamel.github.io/Cinephiliac/">
             <h2>Cinephiliac</h2>
             <img
@@ -32,7 +34,7 @@ function Projects() {
           </a>
         </li>
 
-        <li className="application">
+        <li className={listClasses}>
           <a href="https://studdy-buddy.herokuapp.com/">
             <h2>Studdy Buddy</h2>
             <img
@@ -43,7 +45,7 @@ function Projects() {
           </a>
         </li>
 
-        <li className="application">
+        <li className={listClasses}>
           <a href="https://the-techies-blog.herokuapp.com/">
             <h2>The Techies Blog</h2>
             <img
@@ -54,7 +56,7 @@ function Projects() {
           </a>
         </li>
 
-        <li className="application">
+        <li className={listClasses}>
           <a href="https://text-editor-pwa-3000.herokuapp.com/">
             <h2>The Techies Blog</h2>
             <img

@@ -29,7 +29,7 @@ function Header({ currentPage, setCurrentPage }) {
             return (
               <li
                 key={page}
-                className="btn"
+                className="btn listStyleNone"
                 onClick={() => setCurrentPage(page)}
               >
                 <h2>

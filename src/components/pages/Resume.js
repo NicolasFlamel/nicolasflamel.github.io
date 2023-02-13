@@ -1,6 +1,12 @@
 import resumePDF from '../../assets/resume.pdf';
 
 function Resume() {
+  const styles = {
+    listStyle: {
+      listStyleType: 'circle',
+    },
+  };
+
   const frontendProficiencies = [
     'HTML',
     'CSS',
@@ -34,7 +40,9 @@ function Resume() {
         <h3>Front-end Proficiencies</h3>
         <ul>
           {frontendProficiencies.map((string) => (
-            <li key={string}>{string}</li>
+            <li style={styles.listStyle} key={string}>
+              {string}
+            </li>
           ))}
         </ul>
       </article>
@@ -42,7 +50,9 @@ function Resume() {
         <h3>Back-end Proficiencies</h3>
         <ul>
           {backendProficiencies.map((string) => (
-            <li key={string}>{string}</li>
+            <li style={styles.listStyle} key={string}>
+              {string}
+            </li>
           ))}
         </ul>
       </article>
