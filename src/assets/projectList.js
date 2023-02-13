@@ -2,6 +2,19 @@ import cinephiliacPreview from '../assets/images/cinephiliac-preview.jpg';
 import studdyBuddyPreview from '../assets/images/studdy-buddy-preview.jpg';
 import techiesBlogPreview from '../assets/images/techies-blog-preview.jpg';
 import textEditorPWAPreview from '../assets/images/text-editor-pwa.jpg';
+import noteTakerPreview from '../assets/images/note-taker-preview.jpg';
+import weatherForecasterPreview from '../assets/images/weather-forecaster-preview.jpg';
+
+// template
+// {
+//     title: '',
+//     githubLink: '',
+//     deployedLink: '',
+//     img: {
+//       src: ,
+//       alt: ' preview',
+//     },
+// },
 
 const projects = [
   {
@@ -38,6 +51,24 @@ const projects = [
     img: {
       src: textEditorPWAPreview,
       alt: 'Text Editor - PWA preview',
+    },
+  },
+  {
+    title: 'Note Taker',
+    githubLink: 'https://github.com/NicolasFlamel/Note-Taker',
+    deployedLink: 'https://note-taker-3010.herokuapp.com/',
+    img: {
+      src: noteTakerPreview,
+      alt: 'Note Taker preview',
+    },
+  },
+  {
+    title: 'Weather Forecaster',
+    githubLink: 'https://github.com/NicolasFlamel/weather-forecaster',
+    deployedLink: 'https://nicolasflamel.github.io/weather-forecaster/',
+    img: {
+      src: weatherForecasterPreview,
+      alt: 'Weather Forecaster preview',
     },
   },
 ];
