@@ -10,30 +10,38 @@ function Contact() {
   };
 
   if (state.succeeded) {
-    return <div className="alert alert-info" role="alert">
-      Message was sent. Thank you.
-    </div>
+    return (
+      <div className="alert alert-info" role="alert">
+        Message was sent. Thank you.
+      </div>
+    );
   }
 
   return (
-    <section className="container d-flex" id="contact">
+    <section className="container d-flex bg-gray p-5" id="contact">
       <form onSubmit={handleSubmit} className="col-sm-6">
         <section>
           <label htmlFor="name" className="form-label">
             Name:
           </label>
-          <input name="name" id="name" className="form-control" required={true} />
+          <input
+            name="name"
+            id="name"
+            className="form-control"
+            required={true}
+          />
         </section>
         <section>
           <label htmlFor="email" className="form-label">
             Email:
           </label>
-          <input name="email" id="email" className="form-control" required={true} />
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
+          <input
+            name="email"
+            id="email"
+            className="form-control"
+            required={true}
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </section>
         <section>
           <label htmlFor="message" className="form-label">
