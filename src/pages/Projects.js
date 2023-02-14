@@ -1,5 +1,5 @@
 // array of projects with keys used in .map()
-import projects from '../../assets/projectList';
+import projects from '../assets/projectList.js';
 
 // returns dimensions in css style with width and ratio provided
 // takes width, then a ratio array ex. 550 16:9

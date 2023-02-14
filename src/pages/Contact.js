@@ -1,5 +1,8 @@
 import 'bootstrap/js/dist/alert';
+import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+
+
 
 function Contact() {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
@@ -17,10 +20,33 @@ function Contact() {
     );
   }
 
+  const fieldCheck = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+
+    if (value && field !== 'email')
+      return
+    switch (field) {
+      case 'name':
+
+        break;
+      case 'email':
+
+        break;
+      case 'message':
+
+        break;
+
+      default:
+        break;
+    }
+  }
+
   return (
+    // add WHEN I move my cursor out of one of the form fields without entering text
     <section className="container d-flex bg-gray p-5" id="contact">
       <form onSubmit={handleSubmit} className="col-sm-6">
-        <section>
+        <section className='m-2'>
           <label htmlFor="name" className="form-label">
             Name:
           </label>
@@ -29,9 +55,10 @@ function Contact() {
             id="name"
             className="form-control"
             required={true}
+            onBlur={fieldCheck}
           />
         </section>
-        <section>
+        <section className='m-2'>
           <label htmlFor="email" className="form-label">
             Email:
           </label>
@@ -40,10 +67,11 @@ function Contact() {
             id="email"
             className="form-control"
             required={true}
+            onBlur={fieldCheck}
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </section>
-        <section>
+        <section className='m-2'>
           <label htmlFor="message" className="form-label">
             Message:
           </label>
@@ -54,6 +82,7 @@ function Contact() {
             rows="10"
             style={styles.messageBox}
             required={true}
+            onBlur={fieldCheck}
           />
           <ValidationError
             prefix="Message"
@@ -63,7 +92,7 @@ function Contact() {
         </section>
         <button
           type="submit"
-          className="btn text-light bg-secondary"
+          className="btn text-light bg-secondary m-2"
           disabled={state.submitting}
         >
           Send
