@@ -2,10 +2,12 @@ import 'bootstrap/js/dist/alert';
 import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-
-
 function Contact() {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
+  const [isNameEmpty, setIsNameEmpty] = useState();
+  const [isEmailEmpty, setIsEmailEmpty] = useState();
+  const [isMessageEmpty, setIsMessageEmpty] = useState();
+
   const styles = {
     messageBox: {
       resize: 'none',
@@ -20,33 +22,11 @@ function Contact() {
     );
   }
 
-  const fieldCheck = (e) => {
-    const field = e.target.name;
-    const value = e.target.value;
-
-    if (value && field !== 'email')
-      return
-    switch (field) {
-      case 'name':
-
-        break;
-      case 'email':
-
-        break;
-      case 'message':
-
-        break;
-
-      default:
-        break;
-    }
-  }
-
   return (
     // add WHEN I move my cursor out of one of the form fields without entering text
     <section className="container d-flex bg-gray p-5" id="contact">
       <form onSubmit={handleSubmit} className="col-sm-6">
-        <section className='m-2'>
+        <section className="m-2">
           <label htmlFor="name" className="form-label">
             Name:
           </label>
@@ -54,11 +34,15 @@ function Contact() {
             name="name"
             id="name"
             className="form-control"
-            required={true}
-            onBlur={fieldCheck}
+            onBlur={(e) =>
+              e.target.value.length > 0
+                ? setIsNameEmpty(false)
+                : setIsNameEmpty(true)
+            }
           />
+          {isNameEmpty ? <p>This field cannot be empty</p> : null}
         </section>
-        <section className='m-2'>
+        <section className="m-2">
           <label htmlFor="email" className="form-label">
             Email:
           </label>
@@ -66,12 +50,16 @@ function Contact() {
             name="email"
             id="email"
             className="form-control"
-            required={true}
-            onBlur={fieldCheck}
+            onBlur={(e) =>
+              e.target.value.length > 0
+                ? setIsEmailEmpty(false)
+                : setIsEmailEmpty(true)
+            }
           />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          {isEmailEmpty ? <p>This field cannot be empty</p> : null}
+          <ValidationError prefix="This" field="email" errors={state.errors} />
         </section>
-        <section className='m-2'>
+        <section className="m-2">
           <label htmlFor="message" className="form-label">
             Message:
           </label>
@@ -81,14 +69,13 @@ function Contact() {
             className="form-control"
             rows="10"
             style={styles.messageBox}
-            required={true}
-            onBlur={fieldCheck}
+            onBlur={(e) =>
+              e.target.value.length > 0
+                ? setIsMessageEmpty(false)
+                : setIsMessageEmpty(true)
+            }
           />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
+          {isMessageEmpty ? <p>This field cannot be empty</p> : null}
         </section>
         <button
           type="submit"
