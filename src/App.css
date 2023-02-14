@@ -58,6 +58,15 @@ header li .active {
 }
 
 #about h3 + i {
-  opacity: 0.60;
+  opacity: 0.6;
   margin: auto 0;
+}
+
+#portfolio img {
+  transition: transform 0.5s;
+  border: 1px solid var(--contrast);
+}
+
+#portfolio img:hover {
+  transform: scale(1.05);
 }
