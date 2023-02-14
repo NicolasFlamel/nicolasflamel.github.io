@@ -16,7 +16,6 @@ function Projects() {
   };
 
   return (
-    // TODO: add hover effect to project img
     // TODO: optimize img loading
     <section className="bg-gray p-5" id="portfolio">
       <h1>My Projects</h1>
