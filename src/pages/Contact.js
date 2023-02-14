@@ -2,14 +2,14 @@ import 'bootstrap/js/dist/alert';
 import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-function FormFields(props) {
+function FormFields({ name, state }) {
   const [isFieldEmpty, setIsFieldEmpty] = useState();
 
   const label = () => {
     return (
       <input
-        name={props.name}
-        id={props.name}
+        name={name}
+        id={name}
         className="form-control"
         onBlur={(e) =>
           e.target.value.length > 0
@@ -23,8 +23,8 @@ function FormFields(props) {
   const textArea = () => {
     return (
       <textarea
-        name={props.name}
-        id={props.name}
+        name={name}
+        id={name}
         className="form-control"
         rows="10"
         style={{ resize: 'none' }}
@@ -39,17 +39,13 @@ function FormFields(props) {
 
   return (
     <section className="m-2">
-      <label htmlFor={props.name} className="form-label">
-        {props.name + ':'}
+      <label htmlFor={name} className="form-label">
+        {name.charAt(0).toUpperCase() + name.slice(1) + ':'}
       </label>
-      {props.name === 'message' ? textArea() : label()}
+      {name === 'message' ? textArea() : label()}
       {isFieldEmpty ? <p>This field cannot be empty</p> : null}
-      {props.name === 'email' ? (
-        <ValidationError
-          prefix="This"
-          field="email"
-          errors={props.state.errors}
-        />
+      {name === 'email' ? (
+        <ValidationError prefix="This" field="email" errors={state.errors} />
       ) : null}
     </section>
   );
