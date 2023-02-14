@@ -18,6 +18,7 @@ function About() {
         alt="self portrait"
         style={{ float: 'left', marginRight: '10px' }}
       />
+      {/* TODO: updated about me text */}
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo
         delectus quia perferendis inventore, illum optio perspiciatis. Esse
