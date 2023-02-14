@@ -1,10 +1,6 @@
 function Header({ currentPage, setCurrentPage }) {
   const pages = ['about', 'portfolio', 'contact', 'resume'];
 
-  const styles = {
-    unorderedList: {},
-  };
-
   const getHeader = (page) => {
     switch (page) {
       case 'about':

@@ -1,4 +1,4 @@
-import resumePDF from '../../assets/resume.pdf';
+import resumePDF from '../assets/resume.pdf';
 
 function Resume() {
   const styles = {
