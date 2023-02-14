@@ -1,41 +1,17 @@
-import { useState } from 'react';
-import github from '../../assets/images/github.svg';
 import portrait from '../../assets/images/portrait-150-200.jpg';
 
 function About() {
-  const [isHover, setIsHover] = useState(false);
   const styles = {
-    githubImage: {
-      width: '60px',
-      height: '70px',
-      opacity: isHover ? 1 : 0.5,
-    },
     title: {
       display: 'flex',
       justifyContent: 'space-between',
     },
   };
 
-  const handleEvent = ({ type }) =>
-    type === 'mouseenter' ? setIsHover(true) : setIsHover(false);
-
   return (
     <section className="bg-gray p-5" id="about">
       <article style={styles.title}>
         <h1>About me</h1>
-        <a
-          href="https://github.com/NicolasFlamel/"
-          target="_blank"
-          rel="noreferrer"
-          onMouseEnter={handleEvent}
-          onMouseLeave={handleEvent}
-        >
-          <img
-            src={github}
-            alt="github profile link"
-            style={styles.githubImage}
-          />
-        </a>
       </article>
       <img
         src={portrait}

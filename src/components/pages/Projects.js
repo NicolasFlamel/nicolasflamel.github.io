@@ -2,7 +2,7 @@
 import projects from '../../assets/projectList';
 
 // returns dimensions in css style with width and ratio provided
-// takes width, then a ratio ex. 550 16:9
+// takes width, then a ratio array ex. 550 16:9
 const imgDim = (width, [ratioW, ratioH]) => {
   const height = (width / ratioW) * ratioH;
   return { width: `${width}px`, height: `${height}px` };
