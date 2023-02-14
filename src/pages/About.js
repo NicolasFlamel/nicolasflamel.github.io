@@ -6,54 +6,37 @@ function About() {
       display: 'flex',
       justifyContent: 'space-between',
     },
+    portraitImg: {
+      float: 'left',
+      marginRight: '10px'
+    },
   };
 
   return (
     <section className="bg-gray p-5" id="about">
-      <article style={styles.title}>
+      <section style={styles.title}>
         <h1>About me</h1>
-      </article>
-      <img
-        src={portrait}
-        alt="self portrait"
-        style={{ float: 'left', marginRight: '10px' }}
-      />
-      {/* TODO: updated about me text */}
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo
-        delectus quia perferendis inventore, illum optio perspiciatis. Esse
-        deleniti ducimus, corrupti minima similique dolor illo deserunt
-        consequatur sit placeat itaque reiciendis error, unde id quisquam,
-        impedit saepe? Fuga deleniti, at facilis nihil porro expedita incidunt
-        ad est quasi ut suscipit commodi quidem animi hic? Dolores reprehenderit
-        animi vel, tempora expedita eaque aspernatur itaque neque. Inventore
-        provident, ipsam corporis et voluptatum dolorum minima deserunt sed ea
-        ullam voluptatibus nam vel, laudantium dolor vero omnis at distinctio
-        officia hic laborum harum nemo? Debitis culpa suscipit quis similique
-        eaque earum ex facere ducimus quam at amet, voluptate eum.
-        Necessitatibus itaque autem provident numquam sapiente! Similique
-        blanditiis ipsum tenetur non quia dolorem aut eligendi, eveniet quisquam
-        laudantium ab delectus autem aliquid asperiores earum culpa quibusdam
-        fuga a esse at sapiente nobis reiciendis sunt ratione. Ab suscipit
-        consequuntur labore? Perspiciatis corrupti asperiores laudantium, alias
-        velit deleniti molestias eos fugiat expedita officia sapiente temporibus
-        cum? Ab at, quas reprehenderit, temporibus suscipit, repudiandae a vero
-        id sed minima ex magnam tenetur error exercitationem quis explicabo
-        labore alias repellat ut optio. Animi debitis, ea fugit aliquam rem
-        nostrum magnam nesciunt ad quidem est officia aliquid adipisci
-        aspernatur harum doloribus sit consequatur possimus excepturi
-        consequuntur ipsam fugiat veniam necessitatibus quis maxime? Corrupti ad
-        quod voluptas sunt nisi vitae non eos voluptatum ipsam, dignissimos
-        dolore laudantium asperiores illo sint rerum et temporibus eaque cum a
-        incidunt cumque officia voluptatibus. Doloremque consectetur sunt
-        expedita itaque. Illo fugit nisi pariatur et consequatur, quibusdam
-        beatae quisquam vel facere dolore omnis blanditiis? Tenetur nulla esse
-        recusandae optio temporibus dolorem incidunt dolores eveniet magnam
-        veniam sunt error quam voluptatibus expedita magni maxime, cupiditate
-        perspiciatis quo? In beatae unde vitae nobis earum magnam minus rem est
-        laborum dolore tenetur atque nemo reprehenderit, voluptates dicta soluta
-        velit!
-      </p>
+      </section>
+      <section >
+        <img
+          src={portrait}
+          alt="self portrait"
+          style={styles.portraitImg}
+        />
+        <h3>Intro</h3>
+        <p>
+          Welcome to my portfolio. My name is Amauri and I love coding! I'm in the middle of a big career change going from basically customer service to being a coder. I made this website for people to get to know a bit about me and see my work as I try navigate this new world I'm just starting off in. Please, help yourself and look through my portfolio and feel free to contact me if you wish.
+        </p>
+        <section style={{ display: 'flex' }}>
+          <h3>Backstory</h3>
+          <i>
+            If you're interested
+          </i>
+        </section>
+        <p>
+          Back in highschool a friend of mine in this field taught very small amount of coding and loved it but unfortunately due to circumstances out of my control I couldn't finish college for a degree in computer science. So went on to work at a hotel for 7 years. Then after having enough of working a job I had no passion for I decided I had enough so I moved to california, <i>for other reasons that are not important to the story</i>, and started planning to change. Through some luck a friend told me about a coding boot camp given by UC Davis so I did some research and it seemed like a perfect fit for where I was and wanted. After a few months that brings us to the now where I am almost done with the boot camp and am looking for potential employers. If you have an interest in talking about hiring me feel free to send me a message through the contact me page. 
+        </p>
+      </section>
     </section>
   );
 }

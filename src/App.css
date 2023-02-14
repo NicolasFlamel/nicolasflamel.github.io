@@ -52,3 +52,12 @@ header li .active {
 .application {
   margin: 5px;
 }
+
+#about p {
+  text-indent: 2em;
+}
+
+#about h3 + i {
+  opacity: 0.60;
+  margin: auto 0;
+}
