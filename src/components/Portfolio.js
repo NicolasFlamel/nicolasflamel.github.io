@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -28,6 +29,7 @@ function Portfolio() {
     <div className="container">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }
