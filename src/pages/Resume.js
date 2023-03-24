@@ -1,6 +1,5 @@
-import resumePDF from '../assets/resume.pdf';
-
 function Resume() {
+  const resumeLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK;
   const styles = {
     listStyle: {
       listStyleType: 'circle',
@@ -32,7 +31,7 @@ function Resume() {
       <h2>Resume</h2>
       <p>
         Download my{' '}
-        <a href={resumePDF} download="Amauri's Resume">
+        <a href={resumeLink} rel="noreferrer" target="_blank">
           resume
         </a>
       </p>
