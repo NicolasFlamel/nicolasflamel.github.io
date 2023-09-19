@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a2b4b43f.css",
-    "main.js": "/portfolio/static/js/main.7bd4a802.js",
+    "main.js": "/portfolio/static/js/main.6035f765.js",
     "static/media/note-taker-preview.jpg": "/portfolio/static/media/note-taker-preview.f59fc1117bf6323f9fc9.jpg",
-    "static/media/weather-forecaster-preview.jpg": "/portfolio/static/media/weather-forecaster-preview.5a20440f0ebf63eae9bd.jpg",
-    "static/media/studdy-buddy-preview.jpg": "/portfolio/static/media/studdy-buddy-preview.24017403a1d4e37af714.jpg",
+    "static/media/weather-forecaster-preview.jpg": "/portfolio/static/media/weather-forecaster-preview.93c03c8db36923f2cb1f.jpg",
+    "static/media/studdy-buddy-preview.jpg": "/portfolio/static/media/studdy-buddy-preview.7cc78c0708794e47ca20.jpg",
     "static/media/reminder-nurse-preview.jpg": "/portfolio/static/media/reminder-nurse-preview.35182554a61ff177eb16.jpg",
     "static/media/techies-blog-preview.jpg": "/portfolio/static/media/techies-blog-preview.02ee3647184e08ef9ab8.jpg",
     "static/media/text-editor-pwa.jpg": "/portfolio/static/media/text-editor-pwa.e9f851f74d73255fb3fd.jpg",
@@ -14,10 +14,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/stack-overflow.svg": "/portfolio/static/media/stack-overflow.2b16c13845003b1854aa013e242d8570.svg",
     "main.a2b4b43f.css.map": "/portfolio/static/css/main.a2b4b43f.css.map",
-    "main.7bd4a802.js.map": "/portfolio/static/js/main.7bd4a802.js.map"
+    "main.6035f765.js.map": "/portfolio/static/js/main.6035f765.js.map"
   },
   "entrypoints": [
     "static/css/main.a2b4b43f.css",
-    "static/js/main.7bd4a802.js"
+    "static/js/main.6035f765.js"
   ]
 }
