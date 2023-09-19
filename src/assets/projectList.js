@@ -17,10 +17,12 @@ import reminderNursePreview from '../assets/images/reminder-nurse-preview.jpg';
 //     },
 // },
 
+const githubLink = 'https://github.com/NicolasFlamel';
+
 const projects = [
   {
     title: 'Studdy Buddy',
-    githubLink: 'https://github.com/NicolasFlamel/Studdy-Buddy',
+    githubLink: githubLink + '/Studdy-Buddy',
     deployedLink: 'https://studdy-buddy.herokuapp.com/',
     img: {
       src: studdyBuddyPreview,
@@ -29,7 +31,7 @@ const projects = [
   },
   {
     title: 'Reminder Nurse',
-    githubLink: 'https://github.com/NicolasFlamel/Reminder-Nurse',
+    githubLink: githubLink + '/Reminder-Nurse',
     deployedLink: 'https://reminder-nurse-3000.herokuapp.com/',
     img: {
       src: reminderNursePreview,
@@ -38,7 +40,7 @@ const projects = [
   },
   {
     title: 'Cinephiliac',
-    githubLink: 'https://github.com/NicolasFlamel/Cinephiliac',
+    githubLink: githubLink + '/Cinephiliac',
     deployedLink: 'https://nicolasflamel.github.io/Cinephiliac/',
     img: {
       src: cinephiliacPreview,
@@ -47,7 +49,7 @@ const projects = [
   },
   {
     title: 'The Techies Blog',
-    githubLink: 'https://github.com/NicolasFlamel/CMS-style-Blog-Site',
+    githubLink: githubLink + '/CMS-style-Blog-Site',
     deployedLink: 'https://the-techies-blog.herokuapp.com/',
     img: {
       src: techiesBlogPreview,
@@ -56,7 +58,7 @@ const projects = [
   },
   {
     title: 'Text-Editor - PWA',
-    githubLink: 'https://github.com/NicolasFlamel/Text-Editor---PWA',
+    githubLink: githubLink + '/Text-Editor---PWA',
     deployedLink: 'https://text-editor-pwa-3000.herokuapp.com/',
     img: {
       src: textEditorPWAPreview,
@@ -65,7 +67,7 @@ const projects = [
   },
   {
     title: 'Note Taker',
-    githubLink: 'https://github.com/NicolasFlamel/Note-Taker',
+    githubLink: githubLink + '/Note-Taker',
     deployedLink: 'https://note-taker-3010.herokuapp.com/',
     img: {
       src: noteTakerPreview,
@@ -74,7 +76,7 @@ const projects = [
   },
   {
     title: 'Weather Forecaster',
-    githubLink: 'https://github.com/NicolasFlamel/weather-forecaster',
+    githubLink: githubLink + '/weather-forecaster',
     deployedLink: 'https://nicolasflamel.github.io/weather-forecaster/',
     img: {
       src: weatherForecasterPreview,
