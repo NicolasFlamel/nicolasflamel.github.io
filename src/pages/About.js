@@ -1,4 +1,4 @@
-import portrait from '../assets/images/portrait-150-200.jpg';
+import { portrait } from '../assets/images';
 
 function About() {
   const styles = {

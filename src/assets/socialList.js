@@ -1,6 +1,4 @@
-import github from '../assets/images/github.svg';
-import linkedin from '../assets/images/linkedin.svg';
-import stackOverflow from '../assets/images/stack-overflow.svg';
+import { github, linkedin, stackOverflow } from './images';
 
 // template
 // {
