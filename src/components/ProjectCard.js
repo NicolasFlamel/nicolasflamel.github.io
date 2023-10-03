@@ -24,9 +24,7 @@ function ProjectCard({ project }) {
 
   const mouseOutHandler = () => {
     setHover(false);
-  }; 
-
-  useEffect(() => {}, [hover]);
+  };
 
   return (
     <li className="application listStyleNone">
@@ -46,7 +44,7 @@ function ProjectCard({ project }) {
           onMouseOut={mouseOutHandler}
         />
         {tech ? (
-          <section className={`tech${hover ? ' hidden' : ''}`}>
+          <section className={`tech${hover ? '' : ' hidden'}`}>
             <img src={tech[0].src} alt={tech[0].alt} />
           </section>
         ) : null}
