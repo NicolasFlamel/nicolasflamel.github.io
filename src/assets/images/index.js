@@ -9,6 +9,11 @@ import reminderNursePreview from './projectPreviews/reminder-nurse-preview.jpg';
 // icons
 import handlebarsIcon from './icons/handlebars-icon.svg';
 import reactIcon from './icons/react-icon.svg';
+import sequelizeIcon from './icons/sequelize-icon.svg';
+import apolloGraphqlIcon from './icons/apollo-graphql-icon.svg';
+import htmlIcon from './icons/html-icon.svg';
+import pwaIcon from './icons/pwa-icon.svg';
+import mongoDBIcon from './icons/mongodb-icon.svg';
 // socials
 import github from './social/github.svg';
 import linkedin from './social/linkedin.svg';
@@ -25,6 +30,11 @@ export {
   reminderNursePreview,
   handlebarsIcon,
   reactIcon,
+  sequelizeIcon,
+  apolloGraphqlIcon,
+  htmlIcon,
+  pwaIcon,
+  mongoDBIcon,
   github,
   linkedin,
   stackOverflow,

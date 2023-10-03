@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 // returns dimensions in css style with width and ratio provided
 // takes width, then a ratio array ex. 550 16:9
+// TODO: make cards screen responsive
 const imgDim = (width, [ratioW, ratioH]) => {
   const height = (width / ratioW) * ratioH;
   return { width: `${width}px`, height: `${height}px` };
@@ -45,7 +46,16 @@ function ProjectCard({ project }) {
         />
         {tech ? (
           <section className={`tech${hover ? '' : ' hidden'}`}>
-            <img src={tech[0].src} alt={tech[0].alt} />
+            {tech.map((tech) => (
+              <img
+                key={tech.alt}
+                src={tech.src}
+                alt={tech.alt}
+                title={tech.alt}
+                onMouseOver={mouseOverHandler}
+                onMouseOut={mouseOutHandler}
+              />
+            ))}
           </section>
         ) : null}
       </a>
