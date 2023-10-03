@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 // returns dimensions in css style with width and ratio provided
 // takes width, then a ratio array ex. 550 16:9

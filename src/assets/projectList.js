@@ -1,11 +1,13 @@
-import cinephiliacPreview from '../assets/images/cinephiliac-preview.jpg';
-import studdyBuddyPreview from '../assets/images/studdy-buddy-preview.jpg';
-import techiesBlogPreview from '../assets/images/techies-blog-preview.jpg';
-import textEditorPWAPreview from '../assets/images/text-editor-pwa.jpg';
-import noteTakerPreview from '../assets/images/note-taker-preview.jpg';
-import weatherForecasterPreview from '../assets/images/weather-forecaster-preview.jpg';
-import reminderNursePreview from '../assets/images/reminder-nurse-preview.jpg';
-import handlebarsIcon from '../assets/images/handlebars-icon.svg';
+import {
+  cinephiliacPreview,
+  studdyBuddyPreview,
+  techiesBlogPreview,
+  textEditorPWAPreview,
+  noteTakerPreview,
+  weatherForecasterPreview,
+  reminderNursePreview,
+  handlebarsIcon,
+} from '../assets/images';
 
 // template
 // {
