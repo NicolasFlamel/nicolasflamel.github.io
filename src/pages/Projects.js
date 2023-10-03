@@ -1,4 +1,4 @@
-import Project from '../components/Project';
+import Project from '../components/ProjectCard';
 // array of projects with keys used in .map()
 import projects from '../assets/projectList.js';
 

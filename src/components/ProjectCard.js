@@ -8,7 +8,7 @@ const imgDim = (width, [ratioW, ratioH]) => {
 };
 
 // { title, githubLink, deployedLink, img, tech }
-function Project({ project }) {
+function ProjectCard({ project }) {
   const { title, githubLink, deployedLink, img, tech } = project;
   const [hover, setHover] = useState(false);
 
@@ -24,7 +24,7 @@ function Project({ project }) {
 
   const mouseOutHandler = () => {
     setHover(false);
-  };
+  }; 
 
   useEffect(() => {}, [hover]);
 
@@ -55,4 +55,4 @@ function Project({ project }) {
   );
 }
 
-export default Project;
+export default ProjectCard;
