@@ -53,6 +53,8 @@ header li .active {
   margin: 5px;
 }
 
+/* About Me page */
+
 #about p {
   text-indent: 2em;
 }
@@ -62,11 +64,16 @@ header li .active {
   margin: auto 0;
 }
 
-#portfolio img {
+/* Portfolio Page */
+#portfolio li {
+  position: relative;
+}
+
+#portfolio .project-preview {
   transition: transform 0.5s;
   border: 1px solid var(--contrast);
 }
 
-#portfolio img:hover {
+#portfolio .project-preview:hover {
   transform: scale(1.05);
 }

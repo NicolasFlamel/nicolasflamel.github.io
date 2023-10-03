@@ -18,6 +18,15 @@ function Project({ project }) {
     },
   };
 
+  const mouseOverHandler = () => {
+    setHover(true);
+  };
+
+  const mouseOutHandler = () => {
+    setHover(false);
+  };
+
+  useEffect(() => {}, [hover]);
 
   return (
     <li className="application listStyleNone">
@@ -36,6 +45,11 @@ function Project({ project }) {
           onMouseOver={mouseOverHandler}
           onMouseOut={mouseOutHandler}
         />
+        {tech ? (
+          <section className={`tech${hover ? ' hidden' : ''}`}>
+            <img src={tech[0].src} alt={tech[0].alt} />
+          </section>
+        ) : null}
       </a>
     </li>
   );
