@@ -1,5 +1,6 @@
 function Resume() {
-  const resumeLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK;
+  const resumeLink =
+    'https://drive.google.com/drive/folders/1XBvyuRQGXvjhBqSpalyikSsFqkwadixq?usp=sharing';
   const styles = {
     listStyle: {
       listStyleType: 'circle',
