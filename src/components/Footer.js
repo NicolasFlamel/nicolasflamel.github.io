@@ -20,6 +20,7 @@ const List = ({ social }) => {
     <a
       href={social.href}
       target="_blank"
+      title={social.title}
       rel="noreferrer"
       onMouseEnter={handleEvent}
       onMouseLeave={handleEvent}
