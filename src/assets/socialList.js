@@ -2,6 +2,7 @@ import { github, linkedin, stackOverflow } from './images';
 
 // template
 // {
+//     title: '',
 //     href: '',
 //     img: {
 //         src: ,
@@ -11,6 +12,7 @@ import { github, linkedin, stackOverflow } from './images';
 
 const socials = [
   {
+    title: 'GitHub',
     href: 'https://github.com/NicolasFlamel/',
     img: {
       src: github,
@@ -18,6 +20,7 @@ const socials = [
     },
   },
   {
+    title: 'LinkedIn',
     href: 'https://www.linkedin.com/in/amauri-rodriguez-929a79265',
     img: {
       src: linkedin,
@@ -25,6 +28,7 @@ const socials = [
     },
   },
   {
+    title: 'Stack Overflow',
     href: 'https://stackoverflow.com/users/21207470/nicolasflamel',
     img: {
       src: stackOverflow,
