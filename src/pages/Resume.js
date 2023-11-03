@@ -11,20 +11,20 @@ function Resume() {
     'HTML',
     'CSS',
     'JavaScript',
-    'jQuery',
-    'Responsive Design',
     'React',
+    'jQuery',
     'Bootstrap',
     'Handlebars',
+    'Responsive Design',
     'Local Storage, Session Storage, IndexedDB',
   ];
   const backendProficiencies = [
     'APIs',
-    'Node',
-    'Express',
+    'REST',
+    'Node.js, Express',
     'MySQL, Sequelize',
     'MongoDB, Mongoose',
-    'REST',
+    'Apollo GraphQL',
   ];
 
   return (
