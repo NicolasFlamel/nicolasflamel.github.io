@@ -24,16 +24,17 @@ function Slideshow() {
         >
           <img
             src={topThreeProjects[slide].img.src}
+            alt={topThreeProjects[slide].img.alt}
             style={{ width: '100%' }}
           />
         </a>
       </div>
-      <a className="prev" onClick={slideButtonHandler}>
+      <button className="prev" onClick={slideButtonHandler}>
         &#10094;
-      </a>
-      <a className="next" onClick={slideButtonHandler}>
+      </button>
+      <button className="next" onClick={slideButtonHandler}>
         &#10095;
-      </a>
+      </button>
     </div>
   );
 }
