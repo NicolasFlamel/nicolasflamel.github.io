@@ -1,5 +1,6 @@
-import projectList from '../assets/projectList';
 import { useState } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import projectList from '../assets/projectList';
 
 const topThreeProjects = projectList.slice(0, 3);
 
@@ -16,17 +17,25 @@ function Slideshow() {
 
   return (
     <div className="slideshow-container">
-      <div className="mySlides" key={topThreeProjects[slide].title}>
+      <div className="mySlides">
         <a
           href={topThreeProjects[slide].githubLink}
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src={topThreeProjects[slide].img.src}
-            alt={topThreeProjects[slide].img.alt}
-            style={{ width: '100%' }}
-          />
+          <TransitionGroup>
+            <CSSTransition
+              key={topThreeProjects[slide].title}
+              timeout={1000}
+              classNames="fade"
+            >
+              <img
+                src={topThreeProjects[slide].img.src}
+                alt={topThreeProjects[slide].img.alt}
+                style={{ width: '100%' }}
+              />
+            </CSSTransition>
+          </TransitionGroup>
         </a>
       </div>
       <button className="prev" onClick={slideButtonHandler}>

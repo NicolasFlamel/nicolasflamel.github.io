@@ -93,8 +93,37 @@ header li .active {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* starting ENTER animation */
+.fade-enter {
+  position: absolute;
+  opacity: 0.01;
+  /* transform: translateY(0%) scale(0.01); */
+}
+
+
+/* ending ENTER animation */
+.fade-enter-active {
+  opacity: 1;
+  /* transform: translateY(0%) scale(1); */
+  transition: all 1000ms ease-in-out;
+}
+
+/* starting EXIT animation */
+.fade-exit {
+  opacity: 1;
+  /* transform: scale(1.01); */
+}
+
+/* ending EXIT animation */
+.fade-exit-active {
+  opacity: 0;
+  /* transform: scale(4);*/
+  transition: all 1000ms ease-in-out; 
 }
 
 /* .fade {
