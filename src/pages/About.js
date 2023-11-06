@@ -1,4 +1,5 @@
 import { portrait } from '../assets/images';
+import { Slideshow } from '../components';
 
 function About() {
   const styles = {
@@ -49,6 +50,7 @@ function About() {
           contact me page.
         </p>
       </section>
+      <Slideshow />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 function Resume() {
   const resumeLink =
-    'https://drive.google.com/drive/folders/1XBvyuRQGXvjhBqSpalyikSsFqkwadixq?usp=sharing';
+    'https://drive.google.com/file/d/1ny84bhM9ylXxOtOHLhSOuXJaOA99_V4s/view?usp=sharing';
   const styles = {
     listStyle: {
       listStyleType: 'circle',
