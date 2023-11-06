@@ -122,20 +122,6 @@ header li .active {
   transition: all 1000ms ease-in-out;
 }
 
-/* .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 /* Portfolio Page */
 #portfolio li {
   position: relative;
