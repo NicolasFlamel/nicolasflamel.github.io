@@ -101,29 +101,25 @@ header li .active {
 /* starting ENTER animation */
 .fade-enter {
   position: absolute;
+  top: 0;
   opacity: 0.01;
-  /* transform: translateY(0%) scale(0.01); */
 }
-
 
 /* ending ENTER animation */
 .fade-enter-active {
   opacity: 1;
-  /* transform: translateY(0%) scale(1); */
   transition: all 1000ms ease-in-out;
 }
 
 /* starting EXIT animation */
 .fade-exit {
   opacity: 1;
-  /* transform: scale(1.01); */
 }
 
 /* ending EXIT animation */
 .fade-exit-active {
   opacity: 0;
-  /* transform: scale(4);*/
-  transition: all 1000ms ease-in-out; 
+  transition: all 1000ms ease-in-out;
 }
 
 /* .fade {
