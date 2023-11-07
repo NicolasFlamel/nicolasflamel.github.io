@@ -1,23 +1,11 @@
 import { useState } from 'react';
 
-// returns dimensions in css style with width and ratio provided
-// takes width, then a ratio array ex. 550 16:9
 // TODO: make cards screen responsive
-const imgDim = (width, [ratioW, ratioH]) => {
-  const height = (width / ratioW) * ratioH;
-  return { width: `${width}px`, height: `${height}px` };
-};
 
 // { title, githubLink, deployedLink, img, tech }
 function ProjectCard({ project }) {
   const { title, githubLink, deployedLink, img, tech } = project;
   const [hover, setHover] = useState(false);
-
-  const styles = {
-    projectImg: {
-      ...imgDim(550, [16, 9]),
-    },
-  };
 
   const mouseOverHandler = () => {
     setHover(true);
@@ -39,7 +27,7 @@ function ProjectCard({ project }) {
         <img
           src={img.src}
           alt={img.alt}
-          style={styles.projectImg}
+          style={{maxWidth: '550px'}}
           className={'project-preview'}
           onMouseOver={mouseOverHandler}
           onMouseOut={mouseOutHandler}
