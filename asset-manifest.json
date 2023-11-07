@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.81ffc5e0.css",
-    "main.js": "/static/js/main.b2a70ffb.js",
-    "static/media/note-taker-preview.jpg": "/static/media/note-taker-preview.f59fc1117bf6323f9fc9.jpg",
-    "static/media/weather-forecaster-preview.jpg": "/static/media/weather-forecaster-preview.93c03c8db36923f2cb1f.jpg",
-    "static/media/studdy-buddy-preview.jpg": "/static/media/studdy-buddy-preview.7cc78c0708794e47ca20.jpg",
-    "static/media/reminder-nurse-preview.jpg": "/static/media/reminder-nurse-preview.35182554a61ff177eb16.jpg",
-    "static/media/techies-blog-preview.jpg": "/static/media/techies-blog-preview.02ee3647184e08ef9ab8.jpg",
-    "static/media/text-editor-pwa.jpg": "/static/media/text-editor-pwa.e9f851f74d73255fb3fd.jpg",
-    "static/media/cinephiliac-preview.jpg": "/static/media/cinephiliac-preview.4add99d349ce565a8b2d.jpg",
+    "main.css": "/static/css/main.7b99bc19.css",
+    "main.js": "/static/js/main.15de23bb.js",
+    "static/media/weather-forecaster-preview.png": "/static/media/weather-forecaster-preview.a6857aebc765e8090e99.png",
+    "static/media/studdy-buddy-preview.png": "/static/media/studdy-buddy-preview.0a3aae9fa2574c9060a8.png",
+    "static/media/cinephiliac-preview.png": "/static/media/cinephiliac-preview.5cb3d3081bbfde4d56cd.png",
+    "static/media/reminder-nurse-preview.png": "/static/media/reminder-nurse-preview.acaec51bb45fa6b722b0.png",
+    "static/media/techies-blog-preview.png": "/static/media/techies-blog-preview.74364745d825dcea71b5.png",
+    "static/media/note-taker-preview.png": "/static/media/note-taker-preview.3af8ae3d6cdb61226b1b.png",
+    "static/media/text-editor-pwa.png": "/static/media/text-editor-pwa.c828f0332e572407d1fd.png",
     "static/media/handlebars-icon.svg": "/static/media/handlebars-icon.eb1304a5f33b61f9f1c15d5a960dea24.svg",
     "static/media/sequelize-icon.svg": "/static/media/sequelize-icon.49ad3c7d6edea99417163e71b0721e5c.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.e68b35f4774979ae220b1d5d7b345b00.svg",
@@ -20,11 +20,11 @@
     "index.html": "/index.html",
     "static/media/stack-overflow.svg": "/static/media/stack-overflow.2b16c13845003b1854aa013e242d8570.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.81ffc5e0.css.map": "/static/css/main.81ffc5e0.css.map",
-    "main.b2a70ffb.js.map": "/static/js/main.b2a70ffb.js.map"
+    "main.7b99bc19.css.map": "/static/css/main.7b99bc19.css.map",
+    "main.15de23bb.js.map": "/static/js/main.15de23bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ffc5e0.css",
-    "static/js/main.b2a70ffb.js"
+    "static/css/main.7b99bc19.css",
+    "static/js/main.15de23bb.js"
   ]
 }
