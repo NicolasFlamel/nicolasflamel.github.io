@@ -1,11 +1,11 @@
 // project previews
-import cinephiliacPreview from './projectPreviews/cinephiliac-preview.jpg';
-import studdyBuddyPreview from './projectPreviews/studdy-buddy-preview.jpg';
-import techiesBlogPreview from './projectPreviews/techies-blog-preview.jpg';
-import textEditorPWAPreview from './projectPreviews/text-editor-pwa.jpg';
-import noteTakerPreview from './projectPreviews/note-taker-preview.jpg';
-import weatherForecasterPreview from './projectPreviews/weather-forecaster-preview.jpg';
-import reminderNursePreview from './projectPreviews/reminder-nurse-preview.jpg';
+import cinephiliacPreview from './projectPreviews/cinephiliac-preview.png';
+import studdyBuddyPreview from './projectPreviews/studdy-buddy-preview.png';
+import techiesBlogPreview from './projectPreviews/techies-blog-preview.png';
+import textEditorPWAPreview from './projectPreviews/text-editor-pwa.png';
+import noteTakerPreview from './projectPreviews/note-taker-preview.png';
+import weatherForecasterPreview from './projectPreviews/weather-forecaster-preview.png';
+import reminderNursePreview from './projectPreviews/reminder-nurse-preview.png';
 // icons
 import handlebarsIcon from './icons/handlebars-icon.svg';
 import reactIcon from './icons/react-icon.svg';
