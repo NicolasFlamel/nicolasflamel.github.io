@@ -123,11 +123,19 @@ header li .active {
 }
 
 /* Portfolio Page */
+#portfolio ol {
+  padding-left: 0;
+}
+
 #portfolio li {
   position: relative;
 }
 
 #portfolio .project-preview {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+
   transition: transform 0.5s;
   border: 1px solid var(--contrast);
 }
