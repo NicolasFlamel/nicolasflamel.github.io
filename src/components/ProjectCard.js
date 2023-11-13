@@ -27,7 +27,6 @@ function ProjectCard({ project }) {
         <img
           src={img.src}
           alt={img.alt}
-          style={{maxWidth: '550px'}}
           className={'project-preview'}
           onMouseOver={mouseOverHandler}
           onMouseOut={mouseOutHandler}
