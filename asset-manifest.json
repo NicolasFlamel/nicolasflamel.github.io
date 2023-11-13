@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b99bc19.css",
-    "main.js": "/static/js/main.15de23bb.js",
+    "main.css": "/static/css/main.52c77299.css",
+    "main.js": "/static/js/main.ad3f8679.js",
     "static/media/weather-forecaster-preview.png": "/static/media/weather-forecaster-preview.a6857aebc765e8090e99.png",
     "static/media/studdy-buddy-preview.png": "/static/media/studdy-buddy-preview.0a3aae9fa2574c9060a8.png",
     "static/media/cinephiliac-preview.png": "/static/media/cinephiliac-preview.5cb3d3081bbfde4d56cd.png",
@@ -20,11 +20,11 @@
     "index.html": "/index.html",
     "static/media/stack-overflow.svg": "/static/media/stack-overflow.2b16c13845003b1854aa013e242d8570.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.7b99bc19.css.map": "/static/css/main.7b99bc19.css.map",
-    "main.15de23bb.js.map": "/static/js/main.15de23bb.js.map"
+    "main.52c77299.css.map": "/static/css/main.52c77299.css.map",
+    "main.ad3f8679.js.map": "/static/js/main.ad3f8679.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b99bc19.css",
-    "static/js/main.15de23bb.js"
+    "static/css/main.52c77299.css",
+    "static/js/main.ad3f8679.js"
   ]
 }
