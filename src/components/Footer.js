@@ -4,14 +4,6 @@ import socials from '../assets/socialList';
 // returns anchor element with a separate isHover state for each
 const List = ({ social }) => {
   const [isHover, setIsHover] = useState(false);
-  const styles = {
-    socialLink: {
-      width: '60px',
-      height: '70px',
-      margin: '0px 30px',
-      opacity: isHover ? 1 : 0.5,
-    },
-  };
 
   const handleEvent = ({ type }) =>
     type === 'mouseenter' ? setIsHover(true) : setIsHover(false);
@@ -25,11 +17,7 @@ const List = ({ social }) => {
       onMouseEnter={handleEvent}
       onMouseLeave={handleEvent}
     >
-      <img
-        src={social.img.src}
-        alt={social.img.alt}
-        style={styles.socialLink}
-      />
+      <img src={social.img.src} alt={social.img.alt} />
     </a>
   );
 };
