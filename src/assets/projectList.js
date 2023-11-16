@@ -1,4 +1,5 @@
 import {
+  // project previews
   cinephiliacPreview,
   studdyBuddyPreview,
   techiesBlogPreview,
@@ -6,6 +7,7 @@ import {
   noteTakerPreview,
   weatherForecasterPreview,
   reminderNursePreview,
+  // tech icons
   handlebarsIcon,
   reactIcon,
   sequelizeIcon,
@@ -13,8 +15,8 @@ import {
   htmlIcon,
   pwaIcon,
   mongoDBIcon,
-  expressJS,
-  nodeJS,
+  expressJSIcon,
+  nodeJSIcon,
 } from '../assets/images';
 
 // template
@@ -39,8 +41,8 @@ const projects = [
       { ...reactIcon },
       { ...apolloGraphqlIcon },
       { ...mongoDBIcon },
-      { ...expressJS },
-      { ...nodeJS },
+      { ...expressJSIcon },
+      { ...nodeJSIcon },
     ],
   },
   {
@@ -48,7 +50,12 @@ const projects = [
     githubLink: githubLink + '/Studdy-Buddy',
     deployedLink: 'https://studdy-buddy.herokuapp.com/',
     img: { ...studdyBuddyPreview },
-    tech: [{ ...handlebarsIcon }, { ...sequelizeIcon }],
+    tech: [
+      { ...handlebarsIcon },
+      { ...sequelizeIcon },
+      { ...expressJSIcon },
+      { ...nodeJSIcon },
+    ],
   },
   {
     title: 'Cinephiliac',
@@ -62,7 +69,12 @@ const projects = [
     githubLink: githubLink + '/CMS-style-Blog-Site',
     deployedLink: 'https://the-techies-blog.herokuapp.com/',
     img: { ...techiesBlogPreview },
-    tech: [{ ...handlebarsIcon }, { ...sequelizeIcon }],
+    tech: [
+      { ...handlebarsIcon },
+      { ...sequelizeIcon },
+      { ...expressJSIcon },
+      { ...nodeJSIcon },
+    ],
   },
   {
     title: 'Text-Editor - PWA',
