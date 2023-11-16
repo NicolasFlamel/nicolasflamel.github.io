@@ -6,7 +6,6 @@ function Projects() {
   return (
     // TODO: optimize img loading if possible
     <section className="bg-gray p-5" id="portfolio">
-      <h1>My Projects</h1>
       <ol className="d-flex flex-wrap justify-content-around">
         {projects.map(({ title, githubLink, deployedLink, img, tech }) => {
           return (

@@ -1,12 +1,12 @@
 function Header({ currentPage, setCurrentPage }) {
-  const pages = ['about', 'portfolio', 'contact', 'resume'];
+  const pages = ['about', 'projects', 'contact', 'resume'];
 
   const getHeader = (page) => {
     switch (page) {
       case 'about':
         return 'About Me';
-      case 'portfolio':
-        return 'Portfolio';
+      case 'projects':
+        return 'Projects';
       case 'contact':
         return 'Contact Me';
       case 'resume':
