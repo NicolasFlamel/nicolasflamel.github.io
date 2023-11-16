@@ -13,6 +13,8 @@ import {
   htmlIcon,
   pwaIcon,
   mongoDBIcon,
+  expressJS,
+  nodeJS,
 } from '../assets/images';
 
 // template
@@ -33,7 +35,13 @@ const projects = [
     githubLink: githubLink + '/Reminder-Nurse',
     deployedLink: 'https://reminder-nurse-3000.herokuapp.com/',
     img: { ...reminderNursePreview },
-    tech: [{ ...reactIcon }, { ...apolloGraphqlIcon }, { ...mongoDBIcon }],
+    tech: [
+      { ...reactIcon },
+      { ...apolloGraphqlIcon },
+      { ...mongoDBIcon },
+      { ...expressJS },
+      { ...nodeJS },
+    ],
   },
   {
     title: 'Studdy Buddy',

@@ -7,13 +7,9 @@ function ProjectCard({ project }) {
   const { title, githubLink, deployedLink, img, tech } = project;
   const [hover, setHover] = useState(false);
 
-  const mouseOverHandler = () => {
-    setHover(true);
-  };
+  const mouseEnterHandler = () => setHover(true);
 
-  const mouseOutHandler = () => {
-    setHover(false);
-  };
+  const mouseLeaveHandler = () => setHover(false);
 
   return (
     <li className="application listStyleNone">
@@ -23,14 +19,14 @@ function ProjectCard({ project }) {
           GitHub Link
         </a>
       </h2>
-      <a href={deployedLink} target="_blank" rel="noreferrer">
-        <img
-          src={img.src}
-          alt={img.alt}
-          className={'project-preview'}
-          onMouseOver={mouseOverHandler}
-          onMouseOut={mouseOutHandler}
-        />
+      <a
+        href={deployedLink}
+        target="_blank"
+        rel="noreferrer"
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
+      >
+        <img src={img.src} alt={img.alt} className={'project-preview'} />
         {tech ? (
           <section className={`tech${hover ? '' : ' hidden'}`}>
             {tech.map((tech) => (
@@ -39,8 +35,6 @@ function ProjectCard({ project }) {
                 src={tech.src}
                 alt={tech.alt}
                 title={tech.alt}
-                onMouseOver={mouseOverHandler}
-                onMouseOut={mouseOutHandler}
               />
             ))}
           </section>
