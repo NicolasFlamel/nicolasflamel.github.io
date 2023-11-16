@@ -145,6 +145,7 @@ header li .active {
 }
 
 #portfolio .tech {
+  display: flex;
   /* position bottom middle of img */
   position: absolute;
   left: 50%;
