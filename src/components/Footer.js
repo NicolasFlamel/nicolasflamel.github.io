@@ -17,7 +17,7 @@ const List = ({ social }) => {
       onMouseEnter={handleEvent}
       onMouseLeave={handleEvent}
     >
-      <img src={social.img.src} alt={social.img.alt} />
+      <img {...social.img} />
     </a>
   );
 };

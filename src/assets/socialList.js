@@ -4,36 +4,24 @@ import { github, linkedin, stackOverflow } from './images';
 // {
 //     title: '',
 //     href: '',
-//     img: {
-//         src: ,
-//         alt: ' link'
-//     }
+//     img: { ...obj }
 // },
 
 const socials = [
   {
     title: 'GitHub',
     href: 'https://github.com/NicolasFlamel/',
-    img: {
-      src: github,
-      alt: 'github profile link',
-    },
+    img: { ...github },
   },
   {
     title: 'LinkedIn',
     href: 'https://www.linkedin.com/in/amauri-rodriguez-929a79265',
-    img: {
-      src: linkedin,
-      alt: 'linkedin profile link',
-    },
+    img: { ...linkedin },
   },
   {
     title: 'Stack Overflow',
     href: 'https://stackoverflow.com/users/21207470/nicolasflamel',
-    img: {
-      src: stackOverflow,
-      alt: 'stack overflow profile link',
-    },
+    img: { ...stackOverflow },
   },
 ];
 

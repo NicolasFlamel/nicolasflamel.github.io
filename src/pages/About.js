@@ -19,7 +19,7 @@ function About() {
         <h1>About me</h1>
       </section>
       <section>
-        <img src={portrait} alt="self portrait" style={styles.portraitImg} />
+        <img {...portrait} style={styles.portraitImg} />
         <h3>Intro</h3>
         <p>
           Welcome to my portfolio. My name is Amauri and I love coding! I'm in
