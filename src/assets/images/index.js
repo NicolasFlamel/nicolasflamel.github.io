@@ -61,8 +61,8 @@ const apolloGraphqlIcon = {
 const htmlIcon = { src: htmlIconObj, alt: 'HTML Icon' };
 const pwaIcon = { src: pwaIconObj, alt: 'Progressive Web Application Icon' };
 const mongoDBIcon = { src: mongoDBIconObj, alt: 'MongoDB Icon' };
-const expressJS = { src: expressJSObj, alt: 'Express.js Icon' };
-const nodeJS = { src: nodeJSObj, alt: 'Node.js Icon' };
+const expressJSIcon = { src: expressJSObj, alt: 'Express.js Icon' };
+const nodeJSIcon = { src: nodeJSObj, alt: 'Node.js Icon' };
 
 const github = { src: githubObj, alt: 'Github profile link' };
 const linkedin = { src: linkedinObj, alt: 'LinkedIn profile link' };
@@ -88,8 +88,8 @@ export {
   htmlIcon,
   pwaIcon,
   mongoDBIcon,
-  expressJS,
-  nodeJS,
+  expressJSIcon,
+  nodeJSIcon,
   github,
   linkedin,
   stackOverflow,
