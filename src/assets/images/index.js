@@ -14,6 +14,8 @@ import apolloGraphqlIcon from './icons/apollo-graphql-icon.svg';
 import htmlIcon from './icons/html-icon.svg';
 import pwaIcon from './icons/pwa-icon.svg';
 import mongoDBIcon from './icons/mongodb-icon.svg';
+import expressJS from './icons/expressjs-icon.svg';
+import nodeJS from './icons/nodejs-icon.svg';
 // socials
 import github from './social/github.svg';
 import linkedin from './social/linkedin.svg';
@@ -35,6 +37,8 @@ export {
   htmlIcon,
   pwaIcon,
   mongoDBIcon,
+  expressJS,
+  nodeJS,
   github,
   linkedin,
   stackOverflow,
