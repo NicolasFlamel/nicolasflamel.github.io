@@ -1,0 +1,29 @@
+name: gh-pages deploy
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - public/**
+      - .github/workflows/deploy.yml
+permissions:
+  contents: write
+jobs:
+  build:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+        env:
+          REACT_APP_FORM_KEY: ${{ secrets.REACT_APP_FORM_KEY }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          branch: gh-pages
+          folder: build
