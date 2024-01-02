@@ -8,7 +8,7 @@ function About() {
       justifyContent: 'space-between',
     },
     portraitImg: {
-      float: 'left',
+      cssFloat: 'left',
       marginRight: '10px',
     },
   };

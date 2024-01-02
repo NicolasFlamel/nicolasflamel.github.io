@@ -1,7 +1,15 @@
-function Header({ currentPage, setCurrentPage }) {
+import './styles.css';
+import { Dispatch, SetStateAction } from 'react';
+
+interface HeaderProps {
+  currentPage: string;
+  setCurrentPage: Dispatch<SetStateAction<string>>;
+}
+
+function Header({ currentPage, setCurrentPage }: HeaderProps) {
   const pages = ['about', 'projects', 'contact', 'resume'];
 
-  const getHeader = (page) => {
+  const getHeader = (page: string) => {
     switch (page) {
       case 'about':
         return 'About Me';

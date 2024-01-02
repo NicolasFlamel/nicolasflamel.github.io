@@ -1,16 +1,19 @@
-import { createRef, useState } from 'react';
+import './styles.css';
+import { createRef, useRef, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import projectList from '../assets/projectList';
+import projectList from '../../assets/projectList';
 
 const topThreeProjects = projectList.slice(0, 3);
 
 function Slideshow() {
-  const nodeRef = createRef(null);
+  const nodeRef = useRef();
   const [slide, setSlide] = useState(0);
   const [disableButton, setDisableButton] = useState(false);
 
-  const slideButtonHandler = (e) => {
-    const buttonValue = e.target.className === 'next' ? 1 : -1;
+  const slideButtonHandler = ({ target }: React.MouseEvent<HTMLElement>) => {
+    if (!(target instanceof Element)) return;
+
+    const buttonValue = target.className === 'next' ? 1 : -1;
     const newSlide = slide + buttonValue;
 
     if (newSlide > topThreeProjects.length - 1) setSlide(0);
@@ -31,7 +34,7 @@ function Slideshow() {
               key={topThreeProjects[slide].title}
               timeout={1000}
               classNames="fade"
-              nodeRef={nodeRef}
+              // nodeRef={nodeRef}
               onEntering={() => setDisableButton(true)}
               onEntered={() => setDisableButton(false)}
             >
@@ -39,7 +42,6 @@ function Slideshow() {
                 src={topThreeProjects[slide].img.src}
                 alt={topThreeProjects[slide].img.alt}
                 style={{ width: '100%' }}
-                ref={nodeRef}
               />
             </CSSTransition>
           </TransitionGroup>

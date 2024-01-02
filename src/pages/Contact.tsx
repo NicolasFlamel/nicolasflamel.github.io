@@ -2,8 +2,13 @@ import 'bootstrap/js/dist/alert';
 import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-function FormFields({ name, state }) {
-  const [isFieldEmpty, setIsFieldEmpty] = useState();
+interface Fields {
+  name: string;
+  state: any;
+}
+
+function FormFields({ name, state }: Fields) {
+  const [isFieldEmpty, setIsFieldEmpty] = useState<boolean>();
 
   const label = () => {
     return (
@@ -26,7 +31,7 @@ function FormFields({ name, state }) {
         name={name}
         id={name}
         className="form-control"
-        rows="10"
+        rows={10}
         style={{ resize: 'none' }}
         onBlur={(e) =>
           e.target.value.length > 0
@@ -53,7 +58,10 @@ function FormFields({ name, state }) {
 
 function Contact() {
   const fields = ['name', 'email', 'message'];
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY || '');
+
+  if (!process.env.REACT_APP_FORM_KEY)
+    return <h1>Form Unavailable at the moment</h1>;
 
   if (state.succeeded) {
     return (

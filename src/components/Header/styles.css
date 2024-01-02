@@ -1,0 +1,25 @@
+header {
+  background: var(--contrast);
+  border-radius: var(--radius);
+}
+
+header a {
+  color: var(--light);
+}
+
+header a:hover {
+  color: var(--dark);
+}
+
+header li .active {
+  color: var(--gray);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+  border-radius: var(--radius);
+}
+
+.application {
+  margin: 5px;
+}

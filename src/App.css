@@ -26,33 +26,6 @@ h5 {
   list-style-type: none;
 }
 
-/* header styling */
-header {
-  background: var(--contrast);
-  border-radius: var(--radius);
-}
-
-header a {
-  color: var(--light);
-}
-
-header a:hover {
-  color: var(--dark);
-}
-
-header li .active {
-  color: var(--gray);
-}
-
-.bg-gray {
-  background-color: var(--gray);
-  border-radius: var(--radius);
-}
-
-.application {
-  margin: 5px;
-}
-
 /* About Me page */
 
 #about p {
@@ -62,64 +35,6 @@ header li .active {
 #about h3 + i {
   opacity: 0.6;
   margin: auto 0;
-}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background: none;
-  border: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* starting ENTER animation */
-.fade-enter {
-  position: absolute;
-  top: 0;
-  opacity: 0.01;
-}
-
-/* ending ENTER animation */
-.fade-enter-active {
-  opacity: 1;
-  transition: all 1000ms ease-in-out;
-}
-
-/* starting EXIT animation */
-.fade-exit {
-  opacity: 1;
-}
-
-/* ending EXIT animation */
-.fade-exit-active {
-  opacity: 0;
-  transition: all 1000ms ease-in-out;
 }
 
 /* Portfolio Page */
@@ -166,24 +81,4 @@ header li .active {
 #portfolio .tech img {
   max-height: 60px;
   margin: 0px 5px;
-}
-
-/* footer section */
-footer {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-footer a,
-footer img {
-  width: 100%;
-  height: auto;
-  max-width: 60px;
-}
-
-footer img:hover {
-  opacity: 0.5;
 }

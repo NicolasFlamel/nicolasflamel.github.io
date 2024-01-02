@@ -1,0 +1,57 @@
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: none;
+  border: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* starting ENTER animation */
+.fade-enter {
+  position: absolute;
+  top: 0;
+  opacity: 0.01;
+}
+
+/* ending ENTER animation */
+.fade-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease-in-out;
+}
+
+/* starting EXIT animation */
+.fade-exit {
+  opacity: 1;
+}
+
+/* ending EXIT animation */
+.fade-exit-active {
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}

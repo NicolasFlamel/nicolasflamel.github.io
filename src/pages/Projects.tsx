@@ -7,13 +7,9 @@ function Projects() {
     // TODO: optimize img loading if possible
     <section className="bg-gray p-5" id="portfolio">
       <ol className="d-flex flex-wrap justify-content-around">
-        {projects.map(({ title, githubLink, deployedLink, img, tech }) => {
-          return (
-            <ProjectCard
-              key={title}
-              project={{ title, githubLink, deployedLink, img, tech }}
-            />
-          );
+        {projects.map((project) => {
+          console.log(project);
+          return <ProjectCard key={project.title} {...project} />;
         })}
       </ol>
     </section>
