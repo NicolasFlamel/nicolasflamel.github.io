@@ -17,7 +17,7 @@ import {
   mongoDBIcon,
   expressJSIcon,
   nodeJSIcon,
-} from '../assets/images';
+} from './images';
 
 // template
 // {
