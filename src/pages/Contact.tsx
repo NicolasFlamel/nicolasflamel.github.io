@@ -4,7 +4,12 @@ import { useForm, ValidationError } from '@formspree/react';
 
 interface Fields {
   name: string;
-  state: any;
+  state: {
+    result: any;
+    submitting: boolean;
+    succeeded: boolean;
+    errors: any;
+  };
 }
 
 function FormFields({ name, state }: Fields) {

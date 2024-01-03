@@ -5,7 +5,7 @@ interface Social {
   title: string;
   href: string;
   img: {
-    src: any;
+    src: string;
     alt: string;
   };
 }

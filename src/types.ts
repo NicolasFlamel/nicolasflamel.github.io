@@ -4,11 +4,11 @@ export interface Project {
   githubLink: string;
   deployedLink: string;
   img: {
-    src: any;
+    src: string;
     alt: string;
   };
   tech: {
-    src: any;
+    src: string;
     alt: string;
   }[];
 }
