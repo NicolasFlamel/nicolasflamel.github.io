@@ -1,6 +1,7 @@
 import './styles.css';
 import { useState } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group';
+import Slide from './Slide';
 import projectList from '../../assets/projectList';
 
 const topThreeProjects = projectList.slice(0, 3);
@@ -23,29 +24,19 @@ function Slideshow() {
   return (
     <div className="slideshow-container">
       <div className="mySlides">
-        <a
-          href={topThreeProjects[slide].githubLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <TransitionGroup>
-            <CSSTransition
-              key={topThreeProjects[slide].title}
-              timeout={1000}
-              classNames="fade"
-              // nodeRef={nodeRef}
-              onEntering={() => setDisableButton(true)}
-              onEntered={() => setDisableButton(false)}
-            >
-              <img
-                src={topThreeProjects[slide].img.src}
-                alt={topThreeProjects[slide].img.alt}
-                style={{ width: '100%' }}
-                loading="lazy"
+        <TransitionGroup>
+          {topThreeProjects.map((project, index) => {
+            return (
+              <Slide
+                key={project.title}
+                project={project}
+                index={index}
+                slide={slide}
+                setDisableButton={setDisableButton}
               />
-            </CSSTransition>
-          </TransitionGroup>
-        </a>
+            );
+          })}
+        </TransitionGroup>
       </div>
       <button className="prev" onClick={slideButtonHandler}>
         &#10094;
