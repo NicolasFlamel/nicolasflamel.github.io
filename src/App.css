@@ -43,12 +43,21 @@ h5 {
 }
 
 #portfolio li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
   position: relative;
 }
 
+#portfolio h2 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
 #portfolio .project-preview {
-  width: 100%;
-  height: auto;
+  width: 548px;
+  height: 264px;
   max-width: 550px;
 
   transition: transform 0.5s;
@@ -75,10 +84,49 @@ h5 {
   z-index: -1;
   left: 0%;
   bottom: 0%;
+  flex-wrap: wrap;
   transform: translate(0%, 0%);
 }
 
 #portfolio .tech img {
   max-height: 60px;
   margin: 0px 5px;
+}
+
+@media all and (max-width: 1280px) {
+}
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+  #portfolio .project-preview {
+    width: 408px;
+    height: 197px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  * {
+    padding: 0 !important;
+  }
+  ul {
+    padding: 0;
+  }
+  .container {
+    --bs-gutter-x: 0;
+  }
+  .p-5 {
+    padding: 1rem !important;
+  }
+  #portfolio .project-preview {
+    width: 293px;
+    height: 141.453px;
+  }
+  footer.m-5 {
+    margin: 10px 0 !important;
+  }
+  footer img {
+    width: 30px;
+  }
 }

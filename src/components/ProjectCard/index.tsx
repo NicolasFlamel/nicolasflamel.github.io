@@ -39,7 +39,12 @@ function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
       >
-        <img src={img.src} alt={img.alt} className={'project-preview'} />
+        <img
+          src={img.src}
+          alt={img.alt}
+          className={'project-preview'}
+          loading="lazy"
+        />
         {tech ? (
           <section className={`tech${hover ? '' : ' hidden'}`}>
             {tech.map((tech) => (
@@ -48,6 +53,7 @@ function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
                 src={tech.src}
                 alt={tech.alt}
                 title={tech.alt}
+                loading="lazy"
               />
             ))}
           </section>

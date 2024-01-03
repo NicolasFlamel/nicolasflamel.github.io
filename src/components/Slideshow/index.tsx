@@ -1,12 +1,11 @@
 import './styles.css';
-import { createRef, useRef, useState } from 'react';
+import { useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import projectList from '../../assets/projectList';
 
 const topThreeProjects = projectList.slice(0, 3);
 
 function Slideshow() {
-  const nodeRef = useRef();
   const [slide, setSlide] = useState(0);
   const [disableButton, setDisableButton] = useState(false);
 
@@ -42,6 +41,7 @@ function Slideshow() {
                 src={topThreeProjects[slide].img.src}
                 alt={topThreeProjects[slide].img.alt}
                 style={{ width: '100%' }}
+                loading="lazy"
               />
             </CSSTransition>
           </TransitionGroup>
