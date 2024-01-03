@@ -1,14 +1,11 @@
+import './styles.css';
 import { useState } from 'react';
+import { Project } from '../../types';
 
 // TODO: make cards screen responsive
-
-// { title, githubLink, deployedLink, img, tech }
-function ProjectCard({ project }) {
-  const { title, githubLink, deployedLink, img, tech } = project;
+function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
   const [hover, setHover] = useState(false);
-
   const mouseEnterHandler = () => setHover(true);
-
   const mouseLeaveHandler = () => setHover(false);
 
   return (
@@ -26,7 +23,12 @@ function ProjectCard({ project }) {
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
       >
-        <img src={img.src} alt={img.alt} className={'project-preview'} />
+        <img
+          src={img.src}
+          alt={img.alt}
+          className={'project-preview'}
+          loading="lazy"
+        />
         {tech ? (
           <section className={`tech${hover ? '' : ' hidden'}`}>
             {tech.map((tech) => (
@@ -35,6 +37,7 @@ function ProjectCard({ project }) {
                 src={tech.src}
                 alt={tech.alt}
                 title={tech.alt}
+                loading="lazy"
               />
             ))}
           </section>

@@ -11,7 +11,7 @@ const styles = {
 
 function App() {
   const hash = window.location.hash.slice(1) || 'about';
-  const [currentPage, setCurrentPage] = useState(hash);
+  const [currentPage, setCurrentPage] = useState<string>(hash);
 
   const renderPage = () => {
     switch (currentPage) {

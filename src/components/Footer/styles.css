@@ -1,0 +1,18 @@
+footer {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer a,
+footer img {
+  width: 100%;
+  height: auto;
+  max-width: 60px;
+}
+
+footer img:hover {
+  opacity: 0.5;
+}

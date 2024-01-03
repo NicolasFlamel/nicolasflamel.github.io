@@ -8,7 +8,7 @@ function About() {
       justifyContent: 'space-between',
     },
     portraitImg: {
-      float: 'left',
+      cssFloat: 'left',
       marginRight: '10px',
     },
   };
@@ -19,7 +19,12 @@ function About() {
         <h1>About me</h1>
       </section>
       <section>
-        <img src={portrait.src} alt={portrait.alt} style={styles.portraitImg} />
+        <img
+          src={portrait.src}
+          alt={portrait.alt}
+          style={styles.portraitImg}
+          loading="lazy"
+        />
         <h3>Intro</h3>
         <p>
           Welcome to my portfolio. My name is Amauri and I love coding! I'm in
