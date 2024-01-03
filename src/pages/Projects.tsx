@@ -1,6 +1,6 @@
 import { ProjectCard } from '../components';
 // array of projects with keys used in .map()
-import projects from '../assets/projectList.js';
+import projects from '../assets/projectList';
 
 function Projects() {
   return (
