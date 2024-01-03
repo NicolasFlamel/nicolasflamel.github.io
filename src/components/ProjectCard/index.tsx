@@ -1,27 +1,11 @@
 import './styles.css';
 import { useState } from 'react';
+import { Project } from '../../types';
 
 // TODO: make cards screen responsive
-
-interface Project {
-  title: string;
-  githubLink: string;
-  deployedLink: string;
-  img: {
-    src: any;
-    alt: string;
-  };
-  tech: {
-    src: any;
-    alt: string;
-  }[];
-}
-
 function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
   const [hover, setHover] = useState(false);
-
   const mouseEnterHandler = () => setHover(true);
-
   const mouseLeaveHandler = () => setHover(false);
 
   return (
