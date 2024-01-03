@@ -32,26 +32,40 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* starting ENTER animation */
-.fade-enter {
+/* Default Style */
+.slide:not(:first-of-type) {
   position: absolute;
   top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* starting ENTER animation */
+.slide.slide-enter {
   opacity: 0.01;
 }
 
 /* ending ENTER animation */
-.fade-enter-active {
+.slide.slide-enter-active {
   opacity: 1;
   transition: all 1000ms ease-in-out;
 }
 
+.slide.slide.slide-enter-done {
+  opacity: 1;
+}
+
 /* starting EXIT animation */
-.fade-exit {
+.slide.slide-exit {
   opacity: 1;
 }
 
 /* ending EXIT animation */
-.fade-exit-active {
+.slide.slide-exit-active {
   opacity: 0;
   transition: all 1000ms ease-in-out;
+}
+
+.slide.slide-exit-done {
+  opacity: 0;
 }
