@@ -17,6 +17,7 @@ import {
   mongoDBIcon,
   expressJSIcon,
   nodeJSIcon,
+  typescriptIcon,
 } from './images';
 
 // template
@@ -57,7 +58,7 @@ const projects = [
     githubLink: githubLink + '/cinephiliac-react',
     deployedLink: 'https://nicolasflamel.github.io/cinephiliac-react/',
     img: cinephiliacPreview,
-    tech: [reactIcon],
+    tech: [reactIcon, typescriptIcon],
   },
   {
     title: 'The Techies Blog',
