@@ -8,10 +8,10 @@ function Resume() {
   };
 
   const frontendProficiencies = [
-    'HTML',
-    'CSS',
+    'HTML/CSS',
     'JavaScript',
     'React',
+    'TypeScript',
     'jQuery',
     'Bootstrap',
     'Handlebars',
