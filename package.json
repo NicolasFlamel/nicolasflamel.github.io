@@ -13,7 +13,6 @@
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "bootstrap": "^5.2.3",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -24,6 +23,7 @@
   "devDependencies": {
     "@types/jquery": "^3.5.29",
     "@types/react-transition-group": "^4.4.8",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.4"
   },
   "scripts": {
@@ -33,7 +33,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint src",
     "prettier": "npx prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
