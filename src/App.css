@@ -93,6 +93,27 @@ h5 {
   margin: 0px 5px;
 }
 
+/* Resume Section */
+#resume ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+  padding: 0;
+
+  gap: 1rem;
+}
+
+#resume .proficiency-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#resume li p {
+  max-width: 100px;
+  text-align: center;
+}
+
 @media all and (max-width: 1280px) {
 }
 
