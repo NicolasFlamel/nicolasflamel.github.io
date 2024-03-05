@@ -2,7 +2,7 @@ import { ProjectCard } from '../components';
 // array of projects with keys used in .map()
 import projects from '../assets/projectList';
 
-function Projects() {
+const Projects = () => {
   return (
     // TODO: optimize img loading if possible
     <section id="portfolio">
@@ -13,6 +13,6 @@ function Projects() {
       </ol>
     </section>
   );
-}
+};
 
 export default Projects;

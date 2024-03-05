@@ -12,7 +12,7 @@ interface Fields {
   };
 }
 
-function FormFields({ name, state }: Fields) {
+const FormFields = ({ name, state }: Fields) => {
   const [isFieldEmpty, setIsFieldEmpty] = useState<boolean>();
 
   const label = () => {
@@ -59,9 +59,9 @@ function FormFields({ name, state }: Fields) {
       ) : null}
     </section>
   );
-}
+};
 
-function Contact() {
+const Contact = () => {
   const fields = ['name', 'email', 'message'];
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY || '');
 
@@ -93,6 +93,6 @@ function Contact() {
       </form>
     </section>
   );
-}
+};
 
 export default Contact;

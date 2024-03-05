@@ -1,7 +1,7 @@
 import { portrait } from '../assets/images';
 import { Slideshow } from '../components';
 
-function About() {
+const About = () => {
   const styles = {
     title: {
       display: 'flex',
@@ -58,6 +58,6 @@ function About() {
       <Slideshow />
     </section>
   );
-}
+};
 
 export default About;

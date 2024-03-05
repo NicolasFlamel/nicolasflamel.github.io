@@ -9,7 +9,7 @@ const styles = {
   color: '#00ADB5',
 };
 
-function App() {
+const App = () => {
   const hash = window.location.hash.slice(1) || 'about';
   const [currentPage, setCurrentPage] = useState<string>(hash);
 
@@ -37,6 +37,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

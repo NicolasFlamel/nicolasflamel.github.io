@@ -3,7 +3,13 @@ import { useState } from 'react';
 import { Project } from '../../types';
 
 // TODO: make cards screen responsive
-function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
+const ProjectCard = ({
+  title,
+  githubLink,
+  deployedLink,
+  img,
+  tech,
+}: Project) => {
   const [hover, setHover] = useState(false);
   const mouseEnterHandler = () => setHover(true);
   const mouseLeaveHandler = () => setHover(false);
@@ -45,6 +51,6 @@ function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
       </a>
     </li>
   );
-}
+};
 
 export default ProjectCard;

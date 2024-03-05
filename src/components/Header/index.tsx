@@ -6,7 +6,7 @@ interface HeaderProps {
   setCurrentPage: Dispatch<SetStateAction<string>>;
 }
 
-function Header({ currentPage, setCurrentPage }: HeaderProps) {
+const Header = ({ currentPage, setCurrentPage }: HeaderProps) => {
   const pages = ['about', 'projects', 'contact', 'resume'];
 
   const getHeader = (page: string) => {
@@ -51,6 +51,6 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

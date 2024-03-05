@@ -6,7 +6,7 @@ import projectList from '../../assets/projectList';
 
 const topThreeProjects = projectList.slice(0, 3);
 
-function Slideshow() {
+const Slideshow = () => {
   const [slide, setSlide] = useState(0);
   const [disableButton, setDisableButton] = useState(false);
 
@@ -50,6 +50,6 @@ function Slideshow() {
       </button>
     </div>
   );
-}
+};
 
 export default Slideshow;

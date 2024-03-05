@@ -3,7 +3,7 @@ import {
   backendProficiencies,
 } from '../assets/proficienciesList';
 
-function Resume() {
+const Resume = () => {
   const resumeLink =
     'https://drive.google.com/file/d/1ny84bhM9ylXxOtOHLhSOuXJaOA99_V4s/view?usp=sharing';
 
@@ -48,6 +48,6 @@ function Resume() {
       </article>
     </section>
   );
-}
+};
 
 export default Resume;
