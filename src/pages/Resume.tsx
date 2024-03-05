@@ -2,6 +2,7 @@ import {
   frontendProficiencies,
   backendProficiencies,
 } from '../assets/proficienciesList';
+import { ProficiencyCard } from '../components';
 
 const Resume = () => {
   const resumeLink =
@@ -11,9 +12,8 @@ const Resume = () => {
     <section id="resume">
       <h2>Resume</h2>
       <p>
-        Download my{' '}
         <a href={resumeLink} rel="noreferrer" target="_blank">
-          resume
+          Download my resume from google drive
         </a>
       </p>
       <article>
@@ -21,12 +21,14 @@ const Resume = () => {
         <ul>
           {frontendProficiencies.map((proficiency) => (
             <li key={proficiency.skill}>
-              <img
-                className="proficiency-icon"
-                src={proficiency.icon.src}
-                alt={proficiency.icon.alt}
-              />
-              <p>{proficiency.skill}</p>
+              <ProficiencyCard>
+                <img
+                  className="proficiency-icon"
+                  src={proficiency.icon.src}
+                  alt={proficiency.icon.alt}
+                />
+                <p>{proficiency.skill}</p>
+              </ProficiencyCard>
             </li>
           ))}
         </ul>
@@ -36,12 +38,14 @@ const Resume = () => {
         <ul>
           {backendProficiencies.map((proficiency) => (
             <li key={proficiency.skill}>
-              <img
-                className="proficiency-icon"
-                src={proficiency.icon.src}
-                alt={proficiency.icon.alt}
-              />
-              <p>{proficiency.skill}</p>
+              <ProficiencyCard>
+                <img
+                  className="proficiency-icon"
+                  src={proficiency.icon.src}
+                  alt={proficiency.icon.alt}
+                />
+                <p>{proficiency.skill}</p>
+              </ProficiencyCard>
             </li>
           ))}
         </ul>

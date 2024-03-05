@@ -2,7 +2,7 @@
   /* setting color scheme for site */
   --dark: #222831;
   --gray: #393e46;
-  --contrast: #00adb5;
+  --contrast: #00c3d1;
   --light: #eeeeee;
 
   /* border settings */
@@ -110,6 +110,8 @@ h5 {
 }
 
 #resume li p {
+  margin: 1rem 0 0 0;
+
   max-width: 100px;
   text-align: center;
 }
