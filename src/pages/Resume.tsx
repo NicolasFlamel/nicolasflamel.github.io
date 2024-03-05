@@ -28,7 +28,7 @@ function Resume() {
   ];
 
   return (
-    <section className="bg-gray p-5" id="resume">
+    <section id="resume">
       <h2>Resume</h2>
       <p>
         Download my{' '}

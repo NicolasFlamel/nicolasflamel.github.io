@@ -78,7 +78,7 @@ function Contact() {
 
   return (
     // add WHEN I move my cursor out of one of the form fields without entering text
-    <section className="container d-flex bg-gray p-5" id="contact">
+    <section className="container d-flex" id="contact">
       <form onSubmit={handleSubmit} className="col-sm-6">
         {fields.map((field) => (
           <FormFields key={field} name={field} state={state} />

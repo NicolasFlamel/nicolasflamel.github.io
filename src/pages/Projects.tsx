@@ -5,7 +5,7 @@ import projects from '../assets/projectList';
 function Projects() {
   return (
     // TODO: optimize img loading if possible
-    <section className="bg-gray p-5" id="portfolio">
+    <section id="portfolio">
       <ol className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />

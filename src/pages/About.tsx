@@ -14,7 +14,7 @@ function About() {
   };
 
   return (
-    <section className="bg-gray p-5" id="about">
+    <section id="about">
       <section style={styles.title}>
         <h1>About me</h1>
       </section>

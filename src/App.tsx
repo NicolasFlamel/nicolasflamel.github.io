@@ -32,7 +32,7 @@ function App() {
     <div className="App" style={styles}>
       <div className="container">
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        {renderPage()}
+        <section className="bg-gray p-5">{renderPage()}</section>
         <Footer />
       </div>
     </div>
