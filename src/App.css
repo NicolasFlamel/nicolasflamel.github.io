@@ -32,9 +32,10 @@ h5 {
   text-indent: 2em;
 }
 
-#about h3 + i {
-  opacity: 0.6;
-  margin: auto 0;
+#about .intro {
+  /* min-height for img float */
+  min-height: 200px;
+  margin-bottom: 1rem;
 }
 
 /* Portfolio Page */
