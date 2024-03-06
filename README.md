@@ -14,7 +14,7 @@ I build this project using React so I can showcase my web projects to potential 
 
 Navigate to the root directory on your terminal then run the application with "npm start". You can then visit the application in your browser through "localhost:3000". Alternatively you can visit the [working application here](https://nicolasflamel.github.io/portfolio/).
 
-![project-preview](./assets/images/project-preview.jpg)
+![project-preview](./assets/images/project-preview.png)
 
 ## Credits
 
