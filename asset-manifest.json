@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.162cb64a.css",
-    "main.js": "/static/js/main.0a26c8f6.js",
+    "main.css": "/static/css/main.93432ace.css",
+    "main.js": "/static/js/main.1b3bd522.js",
     "static/media/studdy-buddy-preview.png": "/static/media/studdy-buddy-preview.0a3aae9fa2574c9060a8.png",
     "static/media/reminder-nurse-preview.png": "/static/media/reminder-nurse-preview.acaec51bb45fa6b722b0.png",
     "static/media/weather-forecaster-preview.png": "/static/media/weather-forecaster-preview.12a81066fc861addbfd0.png",
@@ -9,25 +9,32 @@
     "static/media/cinephiliac-preview.png": "/static/media/cinephiliac-preview.1b6b01c2b28f4c7a4c3d.png",
     "static/media/note-taker-preview.png": "/static/media/note-taker-preview.3af8ae3d6cdb61226b1b.png",
     "static/media/text-editor-pwa.png": "/static/media/text-editor-pwa.c828f0332e572407d1fd.png",
-    "static/media/handlebars-icon.svg": "/static/media/handlebars-icon.eb1304a5f33b61f9f1c15d5a960dea24.svg",
+    "static/media/responsive-icon.svg": "/static/media/responsive-icon.46d8db7eb49ef6c79407191e13866600.svg",
+    "static/media/jquery-icon.svg": "/static/media/jquery-icon.039c608f55ab7b07e83800a97e9a8869.svg",
+    "static/media/api-icon.svg": "/static/media/api-icon.58355454ac85904b83287f8f42159b6f.svg",
     "static/media/sequelize-icon.svg": "/static/media/sequelize-icon.49ad3c7d6edea99417163e71b0721e5c.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/localStorage-icon.svg": "/static/media/localStorage-icon.c3a460220ec5aa7ff008a97319466069.svg",
     "static/media/typescript-icon.svg": "/static/media/typescript-icon.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
     "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.502737ea1f44b9be4170cafd2bace4e7.svg",
     "static/media/pwa-icon.svg": "/static/media/pwa-icon.77093b9841db2db5c30820ec43148dc0.svg",
+    "static/media/handlebars-icon.svg": "/static/media/handlebars-icon.5f6e767f30d9a5ac0200bd39c8a5b95d.svg",
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
+    "static/media/bootstrap-icon.svg": "/static/media/bootstrap-icon.c2b6db5b07dafc23f205980c22be4ab0.svg",
     "static/media/apollo-graphql-icon.svg": "/static/media/apollo-graphql-icon.4d7bf5a2edb6a3be1e5b53169e09a167.svg",
     "static/media/expressjs-icon.svg": "/static/media/expressjs-icon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
+    "static/media/javascript-icon.svg": "/static/media/javascript-icon.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/github.svg": "/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
     "index.html": "/index.html",
     "static/media/stack-overflow.svg": "/static/media/stack-overflow.2b16c13845003b1854aa013e242d8570.svg",
+    "static/media/css-icon.svg": "/static/media/css-icon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.162cb64a.css.map": "/static/css/main.162cb64a.css.map",
-    "main.0a26c8f6.js.map": "/static/js/main.0a26c8f6.js.map"
+    "main.93432ace.css.map": "/static/css/main.93432ace.css.map",
+    "main.1b3bd522.js.map": "/static/js/main.1b3bd522.js.map"
   },
   "entrypoints": [
-    "static/css/main.162cb64a.css",
-    "static/js/main.0a26c8f6.js"
+    "static/css/main.93432ace.css",
+    "static/js/main.1b3bd522.js"
   ]
 }
