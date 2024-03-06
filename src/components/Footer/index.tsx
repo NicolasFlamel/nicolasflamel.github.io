@@ -19,7 +19,7 @@ const List = ({ href, title, img }: Social) => {
   );
 };
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="text-center m-5">
       {socials.map((social) => (
@@ -27,6 +27,6 @@ function Footer() {
       ))}
     </footer>
   );
-}
+};
 
 export default Footer;

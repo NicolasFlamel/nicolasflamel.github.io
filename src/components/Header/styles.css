@@ -19,7 +19,3 @@ header li .active {
   background-color: var(--gray);
   border-radius: var(--radius);
 }
-
-.application {
-  margin: 5px;
-}

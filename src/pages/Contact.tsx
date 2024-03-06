@@ -12,7 +12,7 @@ interface Fields {
   };
 }
 
-function FormFields({ name, state }: Fields) {
+const FormFields = ({ name, state }: Fields) => {
   const [isFieldEmpty, setIsFieldEmpty] = useState<boolean>();
 
   const label = () => {
@@ -59,9 +59,9 @@ function FormFields({ name, state }: Fields) {
       ) : null}
     </section>
   );
-}
+};
 
-function Contact() {
+const Contact = () => {
   const fields = ['name', 'email', 'message'];
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY || '');
 
@@ -78,7 +78,7 @@ function Contact() {
 
   return (
     // add WHEN I move my cursor out of one of the form fields without entering text
-    <section className="container d-flex bg-gray p-5" id="contact">
+    <section className="container d-flex" id="contact">
       <form onSubmit={handleSubmit} className="col-sm-6">
         {fields.map((field) => (
           <FormFields key={field} name={field} state={state} />
@@ -93,6 +93,6 @@ function Contact() {
       </form>
     </section>
   );
-}
+};
 
 export default Contact;

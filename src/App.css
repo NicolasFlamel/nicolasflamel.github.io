@@ -2,7 +2,7 @@
   /* setting color scheme for site */
   --dark: #222831;
   --gray: #393e46;
-  --contrast: #00adb5;
+  --contrast: #00c3d1;
   --light: #eeeeee;
 
   /* border settings */
@@ -32,9 +32,10 @@ h5 {
   text-indent: 2em;
 }
 
-#about h3 + i {
-  opacity: 0.6;
-  margin: auto 0;
+#about .intro {
+  /* min-height for img float */
+  min-height: 200px;
+  margin-bottom: 1rem;
 }
 
 /* Portfolio Page */
@@ -42,55 +43,27 @@ h5 {
   padding-left: 0;
 }
 
-#portfolio li {
+/* Resume Section */
+#resume ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex: 1;
-  position: relative;
+
+  list-style: none;
+  padding: 0;
+
+  gap: 1rem;
 }
 
-#portfolio h2 {
+#resume .proficiency-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#resume li p {
+  margin: 1rem 0 0 0;
+
+  max-width: 100px;
   text-align: center;
-  flex-basis: 100%;
-}
-
-#portfolio .project-preview {
-  width: 548px;
-  height: 264px;
-  max-width: 550px;
-
-  transition: transform 0.5s;
-  border: 1px solid var(--contrast);
-}
-
-#portfolio .project-preview:hover {
-  transform: scale(1.05);
-}
-
-#portfolio .tech {
-  display: flex;
-  /* position bottom middle of img */
-  position: absolute;
-  left: 50%;
-  bottom: 0%;
-
-  transition: all 0.5s;
-  transform: translate(-50%);
-}
-
-#portfolio .tech.hidden {
-  /* sets hidden and starting position for transform */
-  z-index: -1;
-  left: 0%;
-  bottom: 0%;
-  flex-wrap: wrap;
-  transform: translate(0%, 0%);
-}
-
-#portfolio .tech img {
-  max-height: 60px;
-  margin: 0px 5px;
 }
 
 @media all and (max-width: 1280px) {

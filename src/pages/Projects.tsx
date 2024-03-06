@@ -2,10 +2,10 @@ import { ProjectCard } from '../components';
 // array of projects with keys used in .map()
 import projects from '../assets/projectList';
 
-function Projects() {
+const Projects = () => {
   return (
     // TODO: optimize img loading if possible
-    <section className="bg-gray p-5" id="portfolio">
+    <section id="portfolio">
       <ol className="d-flex flex-wrap justify-content-around">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
@@ -13,6 +13,6 @@ function Projects() {
       </ol>
     </section>
   );
-}
+};
 
 export default Projects;

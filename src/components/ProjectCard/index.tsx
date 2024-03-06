@@ -1,10 +1,19 @@
 import './styles.css';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Project } from '../../types';
+import { CSSTransition } from 'react-transition-group';
 
 // TODO: make cards screen responsive
-function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
+const ProjectCard = ({
+  title,
+  githubLink,
+  deployedLink,
+  img,
+  tech,
+}: Project) => {
   const [hover, setHover] = useState(false);
+  const nodeRef = useRef(null);
+
   const mouseEnterHandler = () => setHover(true);
   const mouseLeaveHandler = () => setHover(false);
 
@@ -29,8 +38,14 @@ function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
           className={'project-preview'}
           loading="lazy"
         />
-        {tech ? (
-          <section className={`tech${hover ? '' : ' hidden'}`}>
+        <CSSTransition
+          classNames="slide"
+          nodeRef={nodeRef}
+          in={hover}
+          timeout={500}
+          unmountOnExit
+        >
+          <section className="tech" ref={nodeRef}>
             {tech.map((tech) => (
               <img
                 key={tech.alt}
@@ -41,10 +56,10 @@ function ProjectCard({ title, githubLink, deployedLink, img, tech }: Project) {
               />
             ))}
           </section>
-        ) : null}
+        </CSSTransition>
       </a>
     </li>
   );
-}
+};
 
 export default ProjectCard;

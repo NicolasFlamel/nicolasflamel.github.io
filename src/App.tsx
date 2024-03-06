@@ -9,7 +9,7 @@ const styles = {
   color: '#00ADB5',
 };
 
-function App() {
+const App = () => {
   const hash = window.location.hash.slice(1) || 'about';
   const [currentPage, setCurrentPage] = useState<string>(hash);
 
@@ -32,11 +32,11 @@ function App() {
     <div className="App" style={styles}>
       <div className="container">
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        {renderPage()}
+        <section className="bg-gray p-5">{renderPage()}</section>
         <Footer />
       </div>
     </div>
   );
-}
+};
 
 export default App;

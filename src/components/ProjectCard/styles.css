@@ -1,0 +1,58 @@
+#portfolio li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.application {
+  margin: 5px;
+}
+
+.application h2 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.application a {
+  position: relative;
+}
+
+.application .project-preview {
+  width: 548px;
+  height: 264px;
+  max-width: 550px;
+
+  transition: transform 0.5s;
+  border: 1px solid var(--contrast);
+}
+
+.application .project-preview:hover {
+  transform: scale(1.05);
+}
+
+.application .tech {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  transition: opacity 0.5s, left 0.5s;
+
+  left: 10%;
+  opacity: 0;
+  transform: translate(-50%);
+}
+
+.application .tech.slide-enter-active,
+.application .tech.slide-enter-done {
+  /* position bottom middle of img */
+  left: 50%;
+  opacity: 1;
+}
+
+.application .tech img {
+  max-height: 60px;
+  margin: 0px 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 90%, 1);
+}
