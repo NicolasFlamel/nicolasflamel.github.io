@@ -15,7 +15,7 @@ const socials = [
   },
   {
     title: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/amauri-rodriguez-929a79265',
+    href: 'https://www.linkedin.com/in/amauri-rodriguez3000/',
     img: { ...linkedin },
   },
   {
