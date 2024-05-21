@@ -16,7 +16,9 @@ import {
   pwaIcon,
   mongoDBIcon,
   expressJSIcon,
+  framerMotionIcon,
   nodeJSIcon,
+  tailwindIcon,
   typescriptIcon,
 } from './images';
 
@@ -54,17 +56,17 @@ const projects = [
     tech: [handlebarsIcon, sequelizeIcon, expressJSIcon, nodeJSIcon],
   },
   {
-    title: 'Weather Forecaster',
-    githubLink: githubLink + '/weather-forecaster-react',
-    deployedLink: 'https://nicolasflamel.github.io/weather-forecaster-react/',
-    img: weatherForecasterPreview,
-    tech: [reactIcon, typescriptIcon],
-  },
-  {
     title: 'Cinephiliac',
     githubLink: githubLink + '/cinephiliac-react',
     deployedLink: 'https://nicolasflamel.github.io/cinephiliac-react/',
     img: cinephiliacPreview,
+    tech: [reactIcon, typescriptIcon, framerMotionIcon, tailwindIcon],
+  },
+  {
+    title: 'Weather Forecaster',
+    githubLink: githubLink + '/weather-forecaster-react',
+    deployedLink: 'https://nicolasflamel.github.io/weather-forecaster-react/',
+    img: weatherForecasterPreview,
     tech: [reactIcon, typescriptIcon],
   },
   {

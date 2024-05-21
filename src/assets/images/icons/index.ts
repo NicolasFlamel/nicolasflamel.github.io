@@ -3,6 +3,7 @@ import apolloGraphqlIconObj from './apollo-graphql-icon.svg';
 import bootstrapIconObj from './bootstrap-icon.svg';
 import cssIconObj from './css-icon.svg';
 import expressJSObj from './expressjs-icon.svg';
+import framerMotionIconObj from './framerMotion-icon.svg';
 import handlebarsIconObj from './handlebars-icon.svg';
 import htmlIconObj from './html-icon.svg';
 import javaScriptObj from './javascript-icon.svg';
@@ -14,6 +15,7 @@ import pwaIconObj from './pwa-icon.svg';
 import reactIconObj from './react-icon.svg';
 import responsiveObj from './responsive-icon.svg';
 import sequelizeIconObj from './sequelize-icon.svg';
+import tailwindIconObj from './tailwind-icon.svg';
 import typescriptObj from './typescript-icon.svg';
 
 export {
@@ -22,6 +24,7 @@ export {
   bootstrapIconObj,
   cssIconObj,
   expressJSObj,
+  framerMotionIconObj,
   handlebarsIconObj,
   htmlIconObj,
   javaScriptObj,
@@ -33,6 +36,7 @@ export {
   reactIconObj,
   responsiveObj,
   sequelizeIconObj,
+  tailwindIconObj,
   typescriptObj,
 };
 

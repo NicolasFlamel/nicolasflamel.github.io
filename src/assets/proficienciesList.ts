@@ -13,6 +13,8 @@ export const frontendProficiencies: ProficiencyObject[] = [
   { skill: 'TypeScript', icon: Icons.typescriptIcon },
   { skill: 'jQuery', icon: Icons.jqueryIcon },
   { skill: 'Bootstrap', icon: Icons.bootstrapIcon },
+  { skill: 'Tailwind', icon: Icons.tailwindIcon },
+  { skill: 'Framer Motion', icon: Icons.framerMotionIcon },
   { skill: 'Handlebars', icon: Icons.handlebarsIcon },
   { skill: 'Responsive Design', icon: Icons.responsiveIcon },
   {

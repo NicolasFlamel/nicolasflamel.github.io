@@ -13,6 +13,7 @@ import {
   bootstrapIconObj,
   cssIconObj,
   expressJSObj,
+  framerMotionIconObj,
   handlebarsIconObj,
   htmlIconObj,
   javaScriptObj,
@@ -24,6 +25,7 @@ import {
   reactIconObj,
   responsiveObj,
   sequelizeIconObj,
+  tailwindIconObj,
   typescriptObj,
 } from './icons';
 // socials
@@ -71,6 +73,10 @@ export const apolloGraphqlIcon = {
 export const bootstrapIcon = { src: bootstrapIconObj, alt: 'Bootstrap Icon' };
 export const cssIcon = { src: cssIconObj, alt: 'CSS Icon' };
 export const expressJSIcon = { src: expressJSObj, alt: 'Express.js Icon' };
+export const framerMotionIcon = {
+  src: framerMotionIconObj,
+  alt: 'Framer Motion Icon',
+};
 export const handlebarsIcon = {
   src: handlebarsIconObj,
   alt: 'Handlebars Icon',
@@ -94,6 +100,7 @@ export const responsiveIcon = {
   alt: 'Responsive Design Icon',
 };
 export const sequelizeIcon = { src: sequelizeIconObj, alt: 'Sequelize Icon' };
+export const tailwindIcon = { src: tailwindIconObj, alt: 'Tailwind Icon' };
 export const typescriptIcon = { src: typescriptObj, alt: 'TypeScript Icon' };
 
 // Socials
