@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.93432ace.css",
-    "main.js": "/static/js/main.a05a220e.js",
+    "main.js": "/static/js/main.fb83792f.js",
     "static/media/studdy-buddy-preview.png": "/static/media/studdy-buddy-preview.0a3aae9fa2574c9060a8.png",
     "static/media/reminder-nurse-preview.png": "/static/media/reminder-nurse-preview.acaec51bb45fa6b722b0.png",
     "static/media/weather-forecaster-preview.png": "/static/media/weather-forecaster-preview.12a81066fc861addbfd0.png",
+    "static/media/cinephiliac-preview.png": "/static/media/cinephiliac-preview.d623c80ef37e678d9425.png",
     "static/media/techies-blog-preview.png": "/static/media/techies-blog-preview.74364745d825dcea71b5.png",
-    "static/media/cinephiliac-preview.png": "/static/media/cinephiliac-preview.1b6b01c2b28f4c7a4c3d.png",
     "static/media/note-taker-preview.png": "/static/media/note-taker-preview.3af8ae3d6cdb61226b1b.png",
     "static/media/text-editor-pwa.png": "/static/media/text-editor-pwa.c828f0332e572407d1fd.png",
     "static/media/responsive-icon.svg": "/static/media/responsive-icon.46d8db7eb49ef6c79407191e13866600.svg",
@@ -22,6 +22,7 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
     "static/media/bootstrap-icon.svg": "/static/media/bootstrap-icon.c2b6db5b07dafc23f205980c22be4ab0.svg",
     "static/media/apollo-graphql-icon.svg": "/static/media/apollo-graphql-icon.4d7bf5a2edb6a3be1e5b53169e09a167.svg",
+    "static/media/tailwind-icon.svg": "/static/media/tailwind-icon.78c92cee54f7e897c18b939b258e181c.svg",
     "static/media/expressjs-icon.svg": "/static/media/expressjs-icon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "static/media/javascript-icon.svg": "/static/media/javascript-icon.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/github.svg": "/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
@@ -30,11 +31,12 @@
     "static/media/stack-overflow.svg": "/static/media/stack-overflow.2b16c13845003b1854aa013e242d8570.svg",
     "static/media/css-icon.svg": "/static/media/css-icon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "static/media/framerMotion-icon.svg": "/static/media/framerMotion-icon.cd0e8acf350dd639e9e8c999f8539a5e.svg",
     "main.93432ace.css.map": "/static/css/main.93432ace.css.map",
-    "main.a05a220e.js.map": "/static/js/main.a05a220e.js.map"
+    "main.fb83792f.js.map": "/static/js/main.fb83792f.js.map"
   },
   "entrypoints": [
     "static/css/main.93432ace.css",
-    "static/js/main.a05a220e.js"
+    "static/js/main.fb83792f.js"
   ]
 }
