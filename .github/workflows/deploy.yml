@@ -18,8 +18,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Build
         run: |
-          npm ci
-          npm run build
+          pnpm ci
+          pnpm run build
         env:
           VITE_APP_FORM_KEY: ${{ secrets.VITE_FORM_KEY }}
       - name: Deploy
