@@ -1,28 +1,27 @@
-#  Name of workflow
 name: Lint workflow
-# Trigger workflow on all pull requests
+
 on:
   pull_request:
     branches:
       - main
       - dev
-# Jobs to carry out
+
 jobs:
-  test:
-    # Operating system to run job on
+  lint:
     runs-on: ubuntu-latest
-    # Steps in job
+
     steps:
-      # Get code from repo
       - name: Checkout code
-        uses: actions/checkout@v1
-      # Install NodeJS
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-      # Build the app
-      - name: 🧰 install deps
-        run: npm install
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm ci
+
       - name: Run lint
-        run: npm run lint
+        run: pnpm run lint
