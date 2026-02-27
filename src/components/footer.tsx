@@ -25,7 +25,7 @@ const List = ({ href, title, img }: Social) => {
   return (
     <Button asChild size={'icon-lg'}>
       <a href={href} target="_blank" title={title} rel="noreferrer">
-        <img src={img.src} alt={img.alt} />
+        <img src={img.src} alt={img.alt} loading={'lazy'} />
       </a>
     </Button>
   );

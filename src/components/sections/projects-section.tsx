@@ -6,11 +6,11 @@ export const ProjectsSection = () => {
   return (
     <section id="projects">
       <TypographyH2>Projects</TypographyH2>
-      <section className={'flex flex-col gap-4 py-4'}>
+      <ol className={'flex flex-col gap-4 py-4'}>
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
-      </section>
+      </ol>
     </section>
   );
 };

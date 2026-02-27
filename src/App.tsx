@@ -1,13 +1,10 @@
 import './App.css';
 import { Footer } from '@/components/footer';
-import {
-  AboutSection,
-  ProjectsSection,
-  ContactSection,
-  ResumeSection,
-} from './components/sections';
 import { Navigation } from '@/components/navigation';
 import { ThemeProvider } from './components/context/theme-provider';
+import { AboutSection } from './components/sections/about-section';
+import { ProjectsSection } from './components/sections/projects-section';
+import { ResumeSection } from './components/sections/resume-section';
 
 const App = () => {
   return (
@@ -18,7 +15,6 @@ const App = () => {
           <AboutSection />
           <ProjectsSection />
           <ResumeSection />
-          <ContactSection />
         </main>
         <Footer />
       </section>

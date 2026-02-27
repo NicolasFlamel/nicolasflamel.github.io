@@ -43,6 +43,7 @@ const ProficiencyList = ({ proficiencyList }: ProficiencyListProps) => {
             className={'size-32 block'}
             src={proficiency.icon.src}
             alt={proficiency.icon.alt}
+            loading={'lazy'}
           />
           <p className={'w-32 m-auto'}>{proficiency.skill}</p>
         </li>

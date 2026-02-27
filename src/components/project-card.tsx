@@ -61,9 +61,9 @@ export const ProjectCard = ({
                 src={tech.src}
                 alt={tech.alt}
                 title={tech.alt}
-                loading="lazy"
                 width={'50px'}
                 height={'50px'}
+                loading="lazy"
               />
             ))}
           </section>
