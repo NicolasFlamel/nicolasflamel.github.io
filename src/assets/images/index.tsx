@@ -1,11 +1,12 @@
 // project previews
-import cinephiliacPreviewObj from './projectPreviews/cinephiliac-preview.png';
-import studdyBuddyPreviewObj from './projectPreviews/studdy-buddy-preview.png';
-import techiesBlogPreviewObj from './projectPreviews/techies-blog-preview.png';
-import textEditorPWAPreviewObj from './projectPreviews/text-editor-pwa.png';
-import noteTakerPreviewObj from './projectPreviews/note-taker-preview.png';
-import weatherForecasterPreviewObj from './projectPreviews/weather-forecaster-preview.png';
-import reminderNursePreviewObj from './projectPreviews/reminder-nurse-preview.png';
+// TODO: lazy load these imports? lighthouse bad score for image pain
+import cinephiliacPreviewObj from './project-previews/cinephiliac-preview.png';
+import noteTakerPreviewObj from './project-previews/note-taker-preview.png';
+import reminderNursePreviewObj from './project-previews/reminder-nurse-preview.jpg';
+import studdyBuddyPreviewObj from './project-previews/studdy-buddy-preview.jpg';
+import techiesBlogPreviewObj from './project-previews/techies-blog-preview.png';
+import textEditorPWAPreviewObj from './project-previews/text-editor-pwa.png';
+import weatherForecasterPreviewObj from './project-previews/weather-forecaster-preview.jpg';
 // icons
 import {
   apiIconObj,

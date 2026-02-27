@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 
 export const Navigation = () => {
-  const pages = ['about', 'projects', 'resume', 'contact'];
+  const pages = ['about', 'projects', 'resume'];
 
   const getHeader = (page: string) => {
     switch (page) {
@@ -12,8 +12,6 @@ export const Navigation = () => {
         return 'Projects';
       case 'resume':
         return 'Resume';
-      case 'contact':
-        return 'Contact Me';
       default:
         return 'About Me';
     }
