@@ -32,7 +32,6 @@ import {
 import githubObj from './social/github.svg';
 import linkedinObj from './social/linkedin.svg';
 import stackOverflowObj from './social/stack-overflow.svg';
-import portraitObj from './social/portrait-150-200.jpg';
 
 // Previews
 export const cinephiliacPreview = {
@@ -110,5 +109,3 @@ export const stackOverflow = {
   src: stackOverflowObj,
   alt: 'Stack Overflow profile link',
 };
-
-export const portrait = { src: portraitObj, alt: 'self portrait' };

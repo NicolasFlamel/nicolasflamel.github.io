@@ -1,41 +1,28 @@
-import { useState } from 'react';
-import { Header, Footer } from './components';
-import { About, Projects, Contact, Resume } from './pages';
 import './App.css';
-
-// needed to override bootstrap
-const styles = {
-  backgroundColor: '#222831',
-  color: '#00ADB5',
-};
+import { Footer } from '@/components/footer';
+import {
+  AboutSection,
+  ProjectsSection,
+  ContactSection,
+  ResumeSection,
+} from './components/sections';
+import { Navigation } from '@/components/navigation';
+import { ThemeProvider } from './components/context/theme-provider';
 
 const App = () => {
-  const hash = window.location.hash.slice(1) || 'about';
-  const [currentPage, setCurrentPage] = useState<string>(hash);
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'about':
-        return <About />;
-      case 'projects':
-        return <Projects />;
-      case 'contact':
-        return <Contact />;
-      case 'resume':
-        return <Resume />;
-      default:
-        return <About />;
-    }
-  };
-
   return (
-    <div className="App" style={styles}>
-      <div className="container">
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <section className="bg-gray p-5">{renderPage()}</section>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <section className={'max-w-5xl flex flex-col items-center m-auto'}>
+        <Navigation />
+        <main className={'flex flex-col gap-8 m-auto p-4 bg-card rounded-xl'}>
+          <AboutSection />
+          <ProjectsSection />
+          <ResumeSection />
+          <ContactSection />
+        </main>
         <Footer />
-      </div>
-    </div>
+      </section>
+    </ThemeProvider>
   );
 };
 
