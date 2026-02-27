@@ -1,5 +1,4 @@
 // project previews
-// TODO: lazy load these imports? lighthouse bad score for image pain
 import cinephiliacPreviewObj from './project-previews/cinephiliac-preview.png';
 import noteTakerPreviewObj from './project-previews/note-taker-preview.png';
 import reminderNursePreviewObj from './project-previews/reminder-nurse-preview.jpg';
@@ -15,12 +14,13 @@ import {
   cssIconObj,
   expressJSObj,
   framerMotionIconObj,
-  handlebarsIconObj,
   htmlIconObj,
   javaScriptObj,
   jQueryObj,
+  lambdaIconObj,
   localStorageIconObj,
   mongoDBIconObj,
+  nextjsIconObj,
   nodeJSObj,
   pwaIconObj,
   reactIconObj,
@@ -77,18 +77,16 @@ export const framerMotionIcon = {
   src: framerMotionIconObj,
   alt: 'Framer Motion Icon',
 };
-export const handlebarsIcon = {
-  src: handlebarsIconObj,
-  alt: 'Handlebars Icon',
-};
 export const htmlIcon = { src: htmlIconObj, alt: 'HTML Icon' };
 export const jsIcon = { src: javaScriptObj, alt: 'JavaScript Icon' };
+export const lambdaIcon = { src: lambdaIconObj, alt: 'Lambda Icon' };
 export const jqueryIcon = { src: jQueryObj, alt: 'jQuery Icon' };
 export const localStorageIcon = {
   src: localStorageIconObj,
   alt: 'Local Storage Icon',
 };
 export const mongoDBIcon = { src: mongoDBIconObj, alt: 'MongoDB Icon' };
+export const nextjsIcon = { src: nextjsIconObj, alt: 'NextJs Icon' };
 export const nodeJSIcon = { src: nodeJSObj, alt: 'Node.js Icon' };
 export const pwaIcon = {
   src: pwaIconObj,
