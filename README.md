@@ -7,12 +7,12 @@ I build this project using React so I can showcase my web projects to potential 
 ## Installation
 
 - Have Nodejs installed (I used v16.18)
-- Install npm dependencies
-  - use 'npm install' on terminal once navigated to folder
+- Install pnpm dependencies
+  - use 'pnpm install' on terminal once navigated to folder
 
 ## Usage
 
-Navigate to the root directory on your terminal then run the application with "npm start". You can then visit the application in your browser through "localhost:3000". Alternatively you can visit the [working application here](https://nicolasflamel.github.io/portfolio/).
+Navigate to the root directory on your terminal then run the application with "pnpm start". You can then visit the application in your browser through "localhost:3000". Alternatively you can visit the [working application here](https://nicolasflamel.github.io/portfolio/).
 
 ![project-preview](./assets/images/project-preview.png)
 
