@@ -33,7 +33,7 @@ export const ResumeSection = () => {
 type ProficiencyListProps = { proficiencyList: ProficiencyObject[] };
 const ProficiencyList = ({ proficiencyList }: ProficiencyListProps) => {
   return (
-    <ol className={'flex flex-wrap gap-4'}>
+    <ol className={'flex flex-wrap gap-4 justify-center'}>
       {proficiencyList.map((proficiency) => (
         <li
           key={proficiency.skill}

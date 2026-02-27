@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import type { Project } from '@/types';
 import { CSSTransition } from 'react-transition-group';
 import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
 
 // TODO: make cards screen responsive.
 // TODO: optimize img loading if possible
@@ -20,11 +21,13 @@ export const ProjectCard = ({
 
   return (
     <li className="text-center relative list-none flex flex-col items-center">
-      <h3>
+      <h3 className={'bg-accent px-4'}>
         {`${title} - `}
-        <a href={githubLink} target="_blank" rel="noreferrer">
-          GitHub Link
-        </a>
+        <Button asChild variant={'link'} className={'p-0'}>
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            GitHub Link
+          </a>
+        </Button>
       </h3>
       <a
         href={deployedLink}
@@ -39,7 +42,6 @@ export const ProjectCard = ({
           src={img.src}
           alt={img.alt}
           className={'project-preview'}
-          loading="lazy"
         />
         <CSSTransition
           classNames="slide"

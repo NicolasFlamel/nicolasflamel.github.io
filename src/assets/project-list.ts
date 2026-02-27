@@ -8,7 +8,6 @@ import {
   weatherForecasterPreview,
   reminderNursePreview,
   // tech icons
-  handlebarsIcon,
   reactIcon,
   sequelizeIcon,
   apolloGraphqlIcon,
@@ -53,7 +52,7 @@ const projects = [
     githubLink: githubLink + '/Studdy-Buddy',
     deployedLink: 'https://studdy-buddy.herokuapp.com/',
     img: studdyBuddyPreview,
-    tech: [handlebarsIcon, sequelizeIcon, expressJSIcon, nodeJSIcon],
+    tech: [sequelizeIcon, expressJSIcon, nodeJSIcon],
   },
   {
     title: 'Cinephiliac',
@@ -74,7 +73,7 @@ const projects = [
     githubLink: githubLink + '/CMS-style-Blog-Site',
     deployedLink: 'https://the-techies-blog.herokuapp.com/',
     img: techiesBlogPreview,
-    tech: [handlebarsIcon, sequelizeIcon, expressJSIcon, nodeJSIcon],
+    tech: [sequelizeIcon, expressJSIcon, nodeJSIcon],
   },
   {
     title: 'Text-Editor - PWA',
