@@ -30,6 +30,10 @@ import githubObj from './social/github.svg';
 import linkedinObj from './social/linkedin.svg';
 import stackOverflowObj from './social/stack-overflow.svg';
 
+export type ImageType = {
+  src: string;
+  alt: string;
+};
 // Previews
 export const cinephiliacPreview = {
   src: cinephiliacPreviewObj,

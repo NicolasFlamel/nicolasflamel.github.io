@@ -13,7 +13,16 @@ import {
   nodeJSIcon,
   tailwindIcon,
   typescriptIcon,
+  type ImageType,
 } from './images';
+
+type ProjectType = {
+  title: string;
+  githubLink: string;
+  deployedLink: string;
+  img: ImageType;
+  tech: ImageType[];
+};
 
 // template
 // {
@@ -27,7 +36,7 @@ import {
 
 const githubLink = 'https://github.com/NicolasFlamel';
 
-const projects = [
+const projects: ProjectType[] = [
   {
     title: 'Reminder Nurse',
     githubLink: githubLink + '/Reminder-Nurse',
