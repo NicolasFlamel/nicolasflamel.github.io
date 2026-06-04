@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'Reminder Nurse',
     githubLink: githubLink + '/Reminder-Nurse',
-    deployedLink: 'https://reminder-nurse-3000.herokuapp.com/',
+    deployedLink: 'https://reminder-nurse.onrender.com/',
     img: reminderNursePreview,
     tech: [
       reactIcon,
@@ -44,7 +44,7 @@ const projects = [
   {
     title: 'Studdy Buddy',
     githubLink: githubLink + '/Studdy-Buddy',
-    deployedLink: 'https://studdy-buddy.herokuapp.com/',
+    deployedLink: 'https://studdy-buddy-0bth.onrender.com/',
     img: studdyBuddyPreview,
     tech: [sequelizeIcon, expressJSIcon, nodeJSIcon],
   },
