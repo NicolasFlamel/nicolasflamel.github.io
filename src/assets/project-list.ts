@@ -2,17 +2,11 @@ import {
   // project previews
   cinephiliacPreview,
   studdyBuddyPreview,
-  techiesBlogPreview,
-  textEditorPWAPreview,
-  noteTakerPreview,
-  weatherForecasterPreview,
   reminderNursePreview,
   // tech icons
   reactIcon,
   sequelizeIcon,
   apolloGraphqlIcon,
-  htmlIcon,
-  pwaIcon,
   mongoDBIcon,
   expressJSIcon,
   framerMotionIcon,
@@ -60,34 +54,6 @@ const projects = [
     deployedLink: 'https://nicolasflamel.github.io/cinephiliac-react/',
     img: cinephiliacPreview,
     tech: [reactIcon, typescriptIcon, framerMotionIcon, tailwindIcon],
-  },
-  {
-    title: 'Weather Forecaster',
-    githubLink: githubLink + '/weather-forecaster-react',
-    deployedLink: 'https://nicolasflamel.github.io/weather-forecaster-react/',
-    img: weatherForecasterPreview,
-    tech: [reactIcon, typescriptIcon],
-  },
-  {
-    title: 'The Techies Blog',
-    githubLink: githubLink + '/CMS-style-Blog-Site',
-    deployedLink: 'https://the-techies-blog.herokuapp.com/',
-    img: techiesBlogPreview,
-    tech: [sequelizeIcon, expressJSIcon, nodeJSIcon],
-  },
-  {
-    title: 'Text-Editor - PWA',
-    githubLink: githubLink + '/Text-Editor---PWA',
-    deployedLink: 'https://text-editor-pwa-3000.herokuapp.com/',
-    img: textEditorPWAPreview,
-    tech: [htmlIcon, pwaIcon],
-  },
-  {
-    title: 'Note Taker',
-    githubLink: githubLink + '/Note-Taker',
-    deployedLink: 'https://note-taker-3010.herokuapp.com/',
-    img: noteTakerPreview,
-    tech: [htmlIcon],
   },
 ];
 

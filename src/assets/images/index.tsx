@@ -1,11 +1,7 @@
 // project previews
 import cinephiliacPreviewObj from './project-previews/cinephiliac-preview.png';
-import noteTakerPreviewObj from './project-previews/note-taker-preview.png';
 import reminderNursePreviewObj from './project-previews/reminder-nurse-preview.jpg';
 import studdyBuddyPreviewObj from './project-previews/studdy-buddy-preview.jpg';
-import techiesBlogPreviewObj from './project-previews/techies-blog-preview.png';
-import textEditorPWAPreviewObj from './project-previews/text-editor-pwa.png';
-import weatherForecasterPreviewObj from './project-previews/weather-forecaster-preview.jpg';
 // icons
 import {
   apiIconObj,
@@ -42,22 +38,6 @@ export const cinephiliacPreview = {
 export const studdyBuddyPreview = {
   src: studdyBuddyPreviewObj,
   alt: 'Studdy Buddy preview',
-};
-export const techiesBlogPreview = {
-  src: techiesBlogPreviewObj,
-  alt: 'Techies Blog preview',
-};
-export const textEditorPWAPreview = {
-  src: textEditorPWAPreviewObj,
-  alt: 'Text Editor - PWA preview',
-};
-export const noteTakerPreview = {
-  src: noteTakerPreviewObj,
-  alt: 'Note Taker preview',
-};
-export const weatherForecasterPreview = {
-  src: weatherForecasterPreviewObj,
-  alt: 'Weather Forecaster preview',
 };
 export const reminderNursePreview = {
   src: reminderNursePreviewObj,
