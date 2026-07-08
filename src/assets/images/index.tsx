@@ -1,5 +1,5 @@
 // project previews
-import cinephiliacPreviewObj from './project-previews/cinephiliac-preview.png';
+import cinephiliacPreviewObj from './project-previews/cinephiliac-preview.jpg';
 import reminderNursePreviewObj from './project-previews/reminder-nurse-preview.jpg';
 import studdyBuddyPreviewObj from './project-previews/studdy-buddy-preview.jpg';
 // icons
