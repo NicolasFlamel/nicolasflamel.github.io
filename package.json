@@ -47,6 +47,11 @@
     "typescript-eslint": "^8.62.1",
     "vite": "^7.3.6"
   },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "pnpm": ">=9",
+    "yarn": "please-use-pnpm"
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   }
